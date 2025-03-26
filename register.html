@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <!-- Favicon icon -->
+    <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon" />
+    <!-- fontawesome icon -->
+    <link
+      rel="stylesheet"
+      href="assets/fonts/fontawesome/css/fontawesome-all.min.css"
+    />
+    <!-- animation css -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/animation/css/animate.min.css"
+    />
+    <!-- vendor css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="auth-wrapper">
+      <div class="auth-content container">
+        <div class="card">
+          <div class="row align-items-center">
+            <div class="col-md-5 d-none d-md-block">
+              <img
+                src="assets/images/auth/register.svg"
+                alt="Register"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <div class="d-flex justify-content-center">
+                  <img
+                    src="assets/images/logo-dark.svg"
+                    alt="logo"
+                    class="img-fluid mb-4"
+                  />
+                </div>
+                <h4 class="mb-3 f-w-400 text-center">
+                  Sign up into your account
+                </h4>
+                <form>
+                  <div class="row">
+                    <div class="mb-3 col-md-6">
+                      <label class="form-label" for="firstName"
+                        >First Name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="firstName"
+                        placeholder="First Name"
+                      />
+                    </div>
+                    <div class="mb-3 col-md-6">
+                      <label class="form-label" for="lastName">Last Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="lastName"
+                        placeholder="Last Name"
+                      />
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="inputEmail4">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="inputEmail4"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <div class="row">
+                    <div class="mb-3 col-md-6">
+                      <label class="form-label" for="inputPassword4"
+                        >Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="inputPassword4"
+                        placeholder="Password"
+                      />
+                    </div>
+                    <div class="mb-3 col-md-6">
+                      <label class="form-label" for="confirmPassword"
+                        >Confirm Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="confirmPassword"
+                        placeholder="Confirm Password"
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="mb-3 col-md-6">
+                      <label class="form-label" for="nationalId"
+                        >National Id</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="nationalId"
+                        placeholder="National Id"
+                      />
+                    </div>
+                    <div class="mb-3 col-md-6">
+                      <label class="form-label" for="zipCode">Zip Code</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="zipCode"
+                        placeholder="Zip Code"
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="mb-3 col-md-4">
+                      <label class="form-label" for="inputCity">Country</label>
+                      <select id="inputState" class="form-control">
+                        <option selected hidden>Please Choose Country</option>
+                        <option>Large select</option>
+                      </select>
+                    </div>
+                    <div class="mb-3 col-md-4">
+                      <label class="form-label" for="inputState">State</label>
+                      <select id="inputState" class="form-control">
+                        <option selected hidden>Please Choose State</option>
+                        <option>Large select</option>
+                      </select>
+                    </div>
+                    <div class="mb-3 col-md-4">
+                      <label class="form-label" for="inputCity">City</label>
+                      <select id="inputCity" class="form-control">
+                        <option selected hidden>Please Choose City</option>
+                        <option>Large select</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Phone Number</label>
+                    <div class="input-group mb-3">
+                      <button
+                        class="btn btn-primary dropdown-toggle btn-show"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        +20
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                      <input
+                        type="text"
+                        class="form-control"
+                        aria-label="Text input with dropdown button"
+                        placeholder="Phone Number"
+                      />
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">ID or Passport </label>
+                    <div class="input-group mb-3">
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="inputGroupFile01"
+                      />
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">
+                    Register
+                  </button>
+                </form>
+                <p class="mb-2">
+                  Already have an account?
+                  <a href="signin.html" class="f-w-400">Log in</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

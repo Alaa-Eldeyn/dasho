@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Information</title>
+    <!-- Favicon icon -->
+    <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon" />
+    <!-- fontawesome icon -->
+    <link
+      rel="stylesheet"
+      href="assets/fonts/fontawesome/css/fontawesome-all.min.css"
+    />
+    <!-- animation css -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/animation/css/animate.min.css"
+    />
+    <!-- material icon -->
+    <link
+      rel="stylesheet"
+      href="assets/fonts/material/css/materialdesignicons.min.css"
+    />
+    <!-- vendor css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- [ navigation menu ] start -->
+    <nav class="pcoded-navbar menupos-fixed">
+      <div class="navbar-wrapper">
+        <div class="navbar-brand header-logo">
+          <a href="index.html" class="b-brand">
+            <img src="assets/images/logo.svg" alt="" class="logo images" />
+            <img
+              src="assets/images/logo-icon.svg"
+              alt=""
+              class="logo-thumb images"
+            />
+          </a>
+          <a class="mobile-menu" id="mobile-collapse" href="#!"
+            ><span></span
+          ></a>
+        </div>
+        <div class="navbar-content scroll-div">
+          <ul class="nav pcoded-inner-navbar">
+            <li data-username="dashboard" class="nav-item">
+              <a href="dashboard.html" class="nav-link"
+                ><span class="pcoded-micon"
+                  ><i class="feather icon-home"></i></span
+                ><span class="pcoded-mtext">Dashboard</span></a
+              >
+            </li>
+            <li data-username="Store" class="nav-item">
+              <a href="store.html" class="nav-link"
+                ><span class="pcoded-micon"
+                  ><i class="fas fa-store-alt"></i></span
+                ><span class="pcoded-mtext">Store</span></a
+              >
+            </li>
+            <li data-username="PersonalInfo" class="nav-item">
+              <a href="personalInfo.html" class="nav-link"
+                ><span class="pcoded-micon"><i class="fas fa-user"></i></span
+                ><span class="pcoded-mtext">Personal information</span></a
+              >
+            </li>
+            <li data-username="AccountDetails" class="nav-item">
+              <a href="accountDetails.html" class="nav-link"
+                ><span class="pcoded-micon"
+                  ><i class="fas fa-list-alt"></i></span
+                ><span class="pcoded-mtext">Account Details</span></a
+              >
+            </li>
+            <li data-username="WalletInformation" class="nav-item">
+              <a href="walletInfo.html" class="nav-link"
+                ><span class="pcoded-micon"><i class="fas fa-wallet"></i></span
+                ><span class="pcoded-mtext">Wallet Information</span></a
+              >
+            </li>
+            <li data-username="CommissionsEarns" class="nav-item">
+              <a href="commissons.html" class="nav-link"
+                ><span class="pcoded-micon"
+                  ><i class="fas fa-hand-holding-usd"></i></span
+                ><span class="pcoded-mtext">Commissions & Earns</span></a
+              >
+            </li>
+            <li data-username="paymentMethods" class="nav-item">
+              <a href="paymentMethods.html" class="nav-link"
+                ><span class="pcoded-micon"
+                  ><i class="fas fa-money-bill-wave"></i></span
+                ><span class="pcoded-mtext">Payment Methods</span></a
+              >
+            </li>
+            <li data-username="TeamOverview" class="nav-item">
+              <a href="teamOverview.html" class="nav-link"
+                ><span class="pcoded-micon"><i class="fas fa-users"></i></span
+                ><span class="pcoded-mtext">Team Overview</span></a
+              >
+            </li>
+            <li data-username="Messages" class="nav-item">
+              <a href="messages.html" class="nav-link"
+                ><span class="pcoded-micon"
+                  ><i class="fas fa-comments"></i></span
+                ><span class="pcoded-mtext">Messages</span></a
+              >
+            </li>
+            <li data-username="Orders" class="nav-item">
+              <a href="orders.html" class="nav-link"
+                ><span class="pcoded-micon"
+                  ><i class="fas fa-dolly-flatbed"></i></span
+                ><span class="pcoded-mtext">Orders</span></a
+              >
+            </li>
+            <li data-username="Settings" class="nav-item">
+              <a href="settings.html" class="nav-link"
+                ><span class="pcoded-micon"
+                  ><i class="feather icon-settings"></i></span
+                ><span class="pcoded-mtext">Settings</span></a
+              >
+            </li>
+            <li data-username="Need Support" class="nav-item">
+              <a href="#!" class="nav-link" target="_blank"
+                ><span class="pcoded-micon"
+                  ><i class="feather icon-help-circle"></i></span
+                ><span class="pcoded-mtext">Need support ?</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- [ navigation menu ] end -->
+
+    <!-- [ Header ] start -->
+    <header
+      class="navbar pcoded-header navbar-expand-lg navbar-light headerpos-fixed headerpos-fixed"
+    >
+      <div class="m-header">
+        <a class="mobile-menu" id="mobile-collapse1" href="#!"><span></span></a>
+        <a href="index.html" class="b-brand">
+          <img src="assets/images/logo.svg" alt="" class="logo images" />
+          <img
+            src="assets/images/logo-icon.svg"
+            alt=""
+            class="logo-thumb images"
+          />
+        </a>
+      </div>
+      <a class="mobile-menu" id="mobile-header" href="#!">
+        <i class="feather icon-more-horizontal"></i>
+      </a>
+      <div class="collapse navbar-collapse">
+        <h4 class="ms-3 my-auto">
+          <i class="fas fa-list-alt me-2"></i>Account Details
+        </h4>
+        <a href="#!" class="mob-toggler"></a>
+        <ul class="navbar-nav ms-auto">
+          <li>
+            <div class="dropdown">
+              <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                ><i class="icon feather icon-bell"></i
+              ></a>
+              <div class="dropdown-menu dropdown-menu-end notification">
+                <div class="noti-head">
+                  <h6 class="d-inline-block m-b-0">Notifications</h6>
+                  <div class="float-end">
+                    <a href="#!" class="m-r-10">mark as read</a>
+                    <a href="#!">clear all</a>
+                  </div>
+                </div>
+                <ul class="noti-body">
+                  <li class="n-title">
+                    <p class="m-b-0">NEW</p>
+                  </li>
+                  <li class="notification">
+                    <div class="d-flex">
+                      <img
+                        class="img-radius"
+                        src="assets/images/user/avatar-1.jpg"
+                        alt="Generic placeholder image"
+                      />
+                      <div class="flex-grow-1">
+                        <p>
+                          <strong>John Doe</strong
+                          ><span class="n-time text-muted"
+                            ><i class="icon feather icon-clock m-r-10"></i>5
+                            min</span
+                          >
+                        </p>
+                        <p>New ticket Added</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="n-title">
+                    <p class="m-b-0">EARLIER</p>
+                  </li>
+                  <li class="notification">
+                    <div class="d-flex">
+                      <img
+                        class="img-radius"
+                        src="assets/images/user/avatar-2.jpg"
+                        alt="Generic placeholder image"
+                      />
+                      <div class="flex-grow-1">
+                        <p>
+                          <strong>Joseph William</strong
+                          ><span class="n-time text-muted"
+                            ><i class="icon feather icon-clock m-r-10"></i>10
+                            min</span
+                          >
+                        </p>
+                        <p>Prchace New Theme and make payment</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="notification">
+                    <div class="d-flex">
+                      <img
+                        class="img-radius"
+                        src="assets/images/user/avatar-3.jpg"
+                        alt="Generic placeholder image"
+                      />
+                      <div class="flex-grow-1">
+                        <p>
+                          <strong>Sara Soudein</strong
+                          ><span class="n-time text-muted"
+                            ><i class="icon feather icon-clock m-r-10"></i>12
+                            min</span
+                          >
+                        </p>
+                        <p>currently login</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="notification">
+                    <div class="d-flex">
+                      <img
+                        class="img-radius"
+                        src="assets/images/user/avatar-1.jpg"
+                        alt="Generic placeholder image"
+                      />
+                      <div class="flex-grow-1">
+                        <p>
+                          <strong>Joseph William</strong
+                          ><span class="n-time text-muted"
+                            ><i class="icon feather icon-clock m-r-10"></i>30
+                            min</span
+                          >
+                        </p>
+                        <p>Prchace New Theme and make payment</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="notification">
+                    <div class="d-flex">
+                      <img
+                        class="img-radius"
+                        src="assets/images/user/avatar-3.jpg"
+                        alt="Generic placeholder image"
+                      />
+                      <div class="flex-grow-1">
+                        <p>
+                          <strong>Sara Soudein</strong
+                          ><span class="n-time text-muted"
+                            ><i class="icon feather icon-clock m-r-10"></i>1
+                            hour</span
+                          >
+                        </p>
+                        <p>currently login</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="notification">
+                    <div class="d-flex">
+                      <img
+                        class="img-radius"
+                        src="assets/images/user/avatar-1.jpg"
+                        alt="Generic placeholder image"
+                      />
+                      <div class="flex-grow-1">
+                        <p>
+                          <strong>Joseph William</strong
+                          ><span class="n-time text-muted"
+                            ><i class="icon feather icon-clock m-r-10"></i>2
+                            hour</span
+                          >
+                        </p>
+                        <p>Prchace New Theme and make payment</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="noti-footer">
+                  <a href="#!">show all</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown drp-user">
+              <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+                <i class="icon feather icon-settings"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-end profile-notification">
+                <div class="pro-head">
+                  <img
+                    src="assets/images/user/avatar-1.jpg"
+                    class="img-radius"
+                    alt="User-Profile-Image"
+                  />
+                  <span>John Doe</span>
+                  <a href="signin.html" class="dud-logout" title="Logout">
+                    <i class="feather icon-log-out"></i>
+                  </a>
+                </div>
+                <ul class="pro-body">
+                  <li>
+                    <a href="#!" class="dropdown-item"
+                      ><i class="feather icon-settings"></i> Settings</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#!" class="dropdown-item"
+                      ><i class="feather icon-user"></i> Profile</a
+                    >
+                  </li>
+                  <li>
+                    <a href="message.html" class="dropdown-item"
+                      ><i class="feather icon-mail"></i> My Messages</a
+                    >
+                  </li>
+                  <li>
+                    <a href="signin.html" class="dropdown-item text-danger"
+                      ><i class="feather icon-lock"></i> Log out</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- [ Header ] end -->
+
+    <!-- [ Main Content ] start -->
+    <div class="pcoded-main-container">
+      <div class="pcoded-wrapper">
+        <div class="pcoded-content">
+          <div class="pcoded-inner-content">
+            <div class="main-body">
+              <div class="page-wrapper">
+                <!-- [ user web-list ] start -->
+                <div class="m-b-30">
+                  <ul class="nav nav-tabs" id="myTab1" role="tablist">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active"
+                        id="user-tab1"
+                        data-bs-toggle="tab"
+                        href="#Details"
+                        role="tab"
+                        >Details</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        id="designer-tab"
+                        data-bs-toggle="tab"
+                        href="#rankLevel"
+                        role="tab"
+                        >Rank Level</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        id="accountType-tab"
+                        data-bs-toggle="tab"
+                        href="#accountType"
+                        role="tab"
+                        >Account Type</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        id="sponsor-tab"
+                        data-bs-toggle="tab"
+                        href="#sponsor"
+                        role="tab"
+                        >Sponsor Details</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="tab-content User-Lists" id="myTabContent1">
+                    <div
+                      class="tab-pane fade show active"
+                      id="Details"
+                      role="tabpanel"
+                    >
+                      <div class="row">
+                        <div class="col-md-8">
+                          <div class="row">
+                            <div class="col-md-6 mb-3">
+                              <div class="card h-100">
+                                <div class="card-header">
+                                  <h5>Personal Info</h5>
+                                </div>
+                                <div class="card-body p-0">
+                                  <div class="my-3">
+                                    <span class="px-3 d-block"
+                                      ><i
+                                        class="fas fa-circle text-c-blue f-10 m-r-5"
+                                      ></i
+                                      ><strong class="fw-bold"
+                                        >Joined Date:
+                                      </strong>
+                                      1/1/2020</span
+                                    >
+                                    <hr />
+                                    <span class="px-3 d-block"
+                                      ><i
+                                        class="fas fa-circle text-c-green f-10 m-r-5"
+                                      ></i
+                                      ><strong class="fw-bold"
+                                        >Account Type: </strong
+                                      >Gold</span
+                                    >
+                                    <hr />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                              <div class="card h-100">
+                                <div class="card-header">
+                                  <h5>Performance</h5>
+                                </div>
+                                <div class="card-body p-0">
+                                  <div class="my-3">
+                                    <span class="px-3 d-block"
+                                      ><i
+                                        class="fas fa-circle text-c-blue f-10 m-r-5"
+                                      ></i
+                                      ><strong class="fw-bold"
+                                        >No. of Recruit members: </strong
+                                      >500</span
+                                    >
+                                    <hr />
+                                    <span class="px-3 d-block"
+                                      ><i
+                                        class="fas fa-circle text-c-green f-10 m-r-5"
+                                      ></i
+                                      ><strong class="fw-bold"
+                                        >Total Collected PVs: </strong
+                                      >23,450,000</span
+                                    >
+                                    <hr />
+                                    <span class="px-3 d-block"
+                                      ><i
+                                        class="fas fa-circle text-c-red f-10 m-r-5"
+                                      ></i
+                                      ><strong class="fw-bold"
+                                        >Rank Level: </strong
+                                      >Team Leader</span
+                                    >
+                                    <hr />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mb-3">
+                            <div class="col-md-6 mb-3">
+                              <div class="card h-100">
+                                <div class="card-header">
+                                  <h5>Activities</h5>
+                                </div>
+                                <div class="card-body p-0">
+                                  <div class="my-3">
+                                    <span class="px-3 d-block">
+                                      <i
+                                        class="fas fa-circle text-c-blue f-10 m-r-5"
+                                      ></i
+                                      ><strong class="fw-bold"
+                                        >Last Login:
+                                      </strong>
+                                      11 Feb. 2025
+                                    </span>
+                                    <hr />
+                                    <span class="px-3 d-block">
+                                      <i
+                                        class="fas fa-circle text-c-green f-10 m-r-5"
+                                      ></i
+                                      ><strong class="fw-bold"
+                                        >Total Referral Links:
+                                      </strong>
+                                      1500
+                                    </span>
+                                    <hr />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                              <div class="card h-100">
+                                <div class="card-header">
+                                  <h5>Contact Info.</h5>
+                                </div>
+                                <div class="card-body p-0">
+                                  <div class="my-3">
+                                    <span class="px-3 d-block">
+                                      <i
+                                        class="fas fa-circle text-c-blue f-10 m-r-5"
+                                      ></i
+                                      ><strong class="fw-bold"
+                                        >Email Address:
+                                      </strong>
+                                      Mostafa_Ahmed@example.com
+                                    </span>
+                                    <hr />
+                                    <span class="px-3 d-block">
+                                      <i
+                                        class="fas fa-circle text-c-green f-10 m-r-5"
+                                      ></i
+                                      ><strong class="fw-bold"
+                                        >Phone Number:
+                                      </strong>
+                                      01012345678
+                                    </span>
+                                    <hr />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card">
+                            <div class="widget-profile-card-3">
+                              <img
+                                class="img-fluid img-thumbnail"
+                                src="assets/images/widget/img-round1.jpg"
+                                alt="Profile-user"
+                              />
+                            </div>
+                            <div class="card-body text-center">
+                              <h3>Sara Soudein</h3>
+                              <p>Web Designer</p>
+                              <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Adipisci a, rem accusantium
+                                recusandae beatae.
+                              </p>
+                            </div>
+
+                            <div class="card-footer bg-inverse">
+                              <div class="row text-center">
+                                <div class="col">
+                                  <h4>400</h4>
+                                  <span>Designs</span>
+                                </div>
+                                <div class="col">
+                                  <h4>90</h4>
+                                  <span>Projects</span>
+                                </div>
+                                <div class="col">
+                                  <h4>70</h4>
+                                  <span>Devlopment</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="rankLevel" role="tabpanel">
+                      <div class="card p-4 w-50 mx-auto">
+                        <div class="text-center">
+                          <i
+                            class="mdi mdi-star-circle"
+                            style="font-size: 100px"
+                          ></i>
+                          <h2>Beginner Marketer</h2>
+                          <p class="fs-6">
+                            Start your journey! Recruit your First Member to
+                            drive progress forward.
+                          </p>
+                          <div class="progress mb-4">
+                            <div
+                              class="progress-bar progress-primary"
+                              role="progressbar"
+                              style="width: 50%"
+                              aria-valuenow="50"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            >
+                              50%
+                            </div>
+                          </div>
+                          <p>
+                            Recruit two additional members to advance to Active
+                            Marketer.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="accountType" role="tabpanel">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="card p-4">
+                            <h5>You have Starter Account</h5>
+                            <ul>
+                              <li>Commission Rate: 5% on direct sales</li>
+                              <li>Supported Levels: 1 level</li>
+                              <li>
+                                Benefits:
+                                <ul>
+                                  <li>Basic marketing support</li>
+                                  <li>Access to limited products</li>
+                                  <li>No upgrade bonuses</li>
+                                </ul>
+                              </li>
+                            </ul>
+                            <button class="btn btn-secondary">
+                              Continue Buying
+                            </button>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="card p-4">
+                            <h5>Next Silver Plan</h5>
+                            <ul>
+                              <li>
+                                Commission Rate: 8% on direct sales + 3% from
+                                level 2
+                              </li>
+                              <li>Supported Levels: 2 levels</li>
+                              <li>
+                                Benefits:
+                                <ul>
+                                  <li>Advanced marketing tools</li>
+                                  <li>
+                                    $50 upgrade bonus after reaching $1,000 in
+                                    sales
+                                  </li>
+                                  <li>Faster customer support</li>
+                                </ul>
+                              </li>
+                            </ul>
+                            <button class="btn btn-primary">
+                              Get this Plan
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="sponsor" role="tabpanel">
+                      <div class="row">
+                        <div class="col-md-8">
+                          <div class="row">
+                            <div class="mb-3">
+                              <div class="card h-100">
+                                <div class="card-header">
+                                  <h5>Personal Info</h5>
+                                </div>
+                                <div class="card-body p-0">
+                                  <div class="my-3">
+                                    <span class="px-3 d-block"
+                                      ><i
+                                        class="fas fa-circle text-c-blue f-10 m-r-5"
+                                      ></i
+                                      ><strong class="fw-bold"
+                                        >Joined Date:
+                                      </strong>
+                                      1/1/2020</span
+                                    >
+                                    <hr />
+                                    <span class="px-3 d-block"
+                                      ><i
+                                        class="fas fa-circle text-c-green f-10 m-r-5"
+                                      ></i
+                                      ><strong class="fw-bold"
+                                        >Account Type: </strong
+                                      >Gold</span
+                                    >
+                                    <hr />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mb-3">
+                              <div class="card h-100">
+                                <div class="card-header">
+                                  <h5>Contact Info.</h5>
+                                </div>
+                                <div class="card-body p-0">
+                                  <div class="my-3">
+                                    <span class="px-3 d-block">
+                                      <i
+                                        class="fas fa-circle text-c-blue f-10 m-r-5"
+                                      ></i
+                                      ><strong class="fw-bold"
+                                        >Email Address:
+                                      </strong>
+                                      Mostafa_Ahmed@example.com
+                                    </span>
+                                    <hr />
+                                    <span class="px-3 d-block">
+                                      <i
+                                        class="fas fa-circle text-c-green f-10 m-r-5"
+                                      ></i
+                                      ><strong class="fw-bold"
+                                        >Phone Number:
+                                      </strong>
+                                      01012345678
+                                    </span>
+                                    <hr />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card">
+                            <div class="widget-profile-card-3">
+                              <img
+                                class="img-fluid img-thumbnail"
+                                src="assets/images/widget/img-round1.jpg"
+                                alt="Profile-user"
+                              />
+                            </div>
+                            <div class="card-body text-center">
+                              <h3>Sara Soudein</h3>
+                              <p>Web Designer</p>
+                              <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Adipisci a, rem accusantium
+                                recusandae beatae.
+                              </p>
+                            </div>
+
+                            <div class="card-footer bg-inverse">
+                              <div class="row text-center">
+                                <div class="col">
+                                  <h4>400</h4>
+                                  <span>Designs</span>
+                                </div>
+                                <div class="col">
+                                  <h4>90</h4>
+                                  <span>Projects</span>
+                                </div>
+                                <div class="col">
+                                  <h4>70</h4>
+                                  <span>Devlopment</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- [ user web-list ] end -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- [ Main Content ] end -->
+
+    <!-- [ Floating Whatsapp ] start -->
+    <div
+      class="position-fixed bottom-0 end-0 m-4 rounded-pill bg-success text-white d-flex justify-content-center align-center"
+      style="width: 50px; height: 50px; cursor: pointer"
+    >
+      <i class="fab fa-whatsapp fs-3 mt-2"></i>
+    </div>
+    <!-- [ Floating Whatsapp ] end -->
+
+    <script src="assets/js/vendor-all.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/pcoded.min.js"></script>
+  </body>
+</html>

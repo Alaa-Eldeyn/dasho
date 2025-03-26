@@ -1,0 +1,1604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commissions & Earns</title>
+    <!-- Favicon icon -->
+    <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon" />
+    <!-- fontawesome icon -->
+    <link
+      rel="stylesheet"
+      href="assets/fonts/fontawesome/css/fontawesome-all.min.css"
+    />
+    <!-- animation css -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/animation/css/animate.min.css"
+    />
+    <!-- data tables css -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/data-tables/css/datatables.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/fonts/material/css/materialdesignicons.min.css"
+    />
+    <!-- vendor css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- [ navigation menu ] start -->
+    <nav class="pcoded-navbar menupos-fixed">
+      <div class="navbar-wrapper">
+        <div class="navbar-brand header-logo">
+          <a href="index.html" class="b-brand">
+            <img src="assets/images/logo.svg" alt="" class="logo images" />
+            <img
+              src="assets/images/logo-icon.svg"
+              alt=""
+              class="logo-thumb images"
+            />
+          </a>
+          <a class="mobile-menu" id="mobile-collapse" href="#!"
+            ><span></span
+          ></a>
+        </div>
+        <div class="navbar-content scroll-div">
+          <ul class="nav pcoded-inner-navbar">
+            <li data-username="dashboard" class="nav-item">
+              <a href="dashboard.html" class="nav-link"
+                ><span class="pcoded-micon"
+                  ><i class="feather icon-home"></i></span
+                ><span class="pcoded-mtext">Dashboard</span></a
+              >
+            </li>
+            <li data-username="Store" class="nav-item">
+              <a href="store.html" class="nav-link"
+                ><span class="pcoded-micon"
+                  ><i class="fas fa-store-alt"></i></span
+                ><span class="pcoded-mtext">Store</span></a
+              >
+            </li>
+            <li data-username="PersonalInfo" class="nav-item">
+              <a href="personalInfo.html" class="nav-link"
+                ><span class="pcoded-micon"><i class="fas fa-user"></i></span
+                ><span class="pcoded-mtext">Personal information</span></a
+              >
+            </li>
+            <li data-username="AccountDetails" class="nav-item">
+              <a href="accountDetails.html" class="nav-link"
+                ><span class="pcoded-micon"
+                  ><i class="fas fa-list-alt"></i></span
+                ><span class="pcoded-mtext">Account Details</span></a
+              >
+            </li>
+            <li data-username="WalletInformation" class="nav-item">
+              <a href="walletInfo.html" class="nav-link"
+                ><span class="pcoded-micon"><i class="fas fa-wallet"></i></span
+                ><span class="pcoded-mtext">Wallet Information</span></a
+              >
+            </li>
+            <li data-username="CommissionsEarns" class="nav-item">
+              <a href="commissons.html" class="nav-link"
+                ><span class="pcoded-micon"
+                  ><i class="fas fa-hand-holding-usd"></i></span
+                ><span class="pcoded-mtext">Commissions & Earns</span></a
+              >
+            </li>
+            <li data-username="paymentMethods" class="nav-item">
+              <a href="paymentMethods.html" class="nav-link"
+                ><span class="pcoded-micon"
+                  ><i class="fas fa-money-bill-wave"></i></span
+                ><span class="pcoded-mtext">Payment Methods</span></a
+              >
+            </li>
+            <li data-username="TeamOverview" class="nav-item">
+              <a href="teamOverview.html" class="nav-link"
+                ><span class="pcoded-micon"><i class="fas fa-users"></i></span
+                ><span class="pcoded-mtext">Team Overview</span></a
+              >
+            </li>
+            <li data-username="Messages" class="nav-item">
+              <a href="messages.html" class="nav-link"
+                ><span class="pcoded-micon"
+                  ><i class="fas fa-comments"></i></span
+                ><span class="pcoded-mtext">Messages</span></a
+              >
+            </li>
+            <li data-username="Orders" class="nav-item">
+              <a href="orders.html" class="nav-link"
+                ><span class="pcoded-micon"
+                  ><i class="fas fa-dolly-flatbed"></i></span
+                ><span class="pcoded-mtext">Orders</span></a
+              >
+            </li>
+            <li data-username="Settings" class="nav-item">
+              <a href="settings.html" class="nav-link"
+                ><span class="pcoded-micon"
+                  ><i class="feather icon-settings"></i></span
+                ><span class="pcoded-mtext">Settings</span></a
+              >
+            </li>
+            <li data-username="Need Support" class="nav-item">
+              <a href="#!" class="nav-link" target="_blank"
+                ><span class="pcoded-micon"
+                  ><i class="feather icon-help-circle"></i></span
+                ><span class="pcoded-mtext">Need support ?</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- [ navigation menu ] end -->
+
+    <!-- [ Header ] start -->
+    <header
+      class="navbar pcoded-header navbar-expand-lg navbar-light headerpos-fixed headerpos-fixed"
+    >
+      <div class="m-header">
+        <a class="mobile-menu" id="mobile-collapse1" href="#!"><span></span></a>
+        <a href="index.html" class="b-brand">
+          <img src="assets/images/logo.svg" alt="" class="logo images" />
+          <img
+            src="assets/images/logo-icon.svg"
+            alt=""
+            class="logo-thumb images"
+          />
+        </a>
+      </div>
+      <a class="mobile-menu" id="mobile-header" href="#!">
+        <i class="feather icon-more-horizontal"></i>
+      </a>
+      <div class="collapse navbar-collapse">
+        <h4 class="ms-3 my-auto">
+          <i class="fas fa-users me-2"></i>Commissions & Earns
+        </h4>
+        <a href="#!" class="mob-toggler"></a>
+        <ul class="navbar-nav ms-auto">
+          <li>
+            <div class="dropdown">
+              <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                ><i class="icon feather icon-bell"></i
+              ></a>
+              <div class="dropdown-menu dropdown-menu-end notification">
+                <div class="noti-head">
+                  <h6 class="d-inline-block m-b-0">Notifications</h6>
+                  <div class="float-end">
+                    <a href="#!" class="m-r-10">mark as read</a>
+                    <a href="#!">clear all</a>
+                  </div>
+                </div>
+                <ul class="noti-body">
+                  <li class="n-title">
+                    <p class="m-b-0">NEW</p>
+                  </li>
+                  <li class="notification">
+                    <div class="d-flex">
+                      <img
+                        class="img-radius"
+                        src="assets/images/user/avatar-1.jpg"
+                        alt="Generic placeholder image"
+                      />
+                      <div class="flex-grow-1">
+                        <p>
+                          <strong>John Doe</strong
+                          ><span class="n-time text-muted"
+                            ><i class="icon feather icon-clock m-r-10"></i>5
+                            min</span
+                          >
+                        </p>
+                        <p>New ticket Added</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="n-title">
+                    <p class="m-b-0">EARLIER</p>
+                  </li>
+                  <li class="notification">
+                    <div class="d-flex">
+                      <img
+                        class="img-radius"
+                        src="assets/images/user/avatar-2.jpg"
+                        alt="Generic placeholder image"
+                      />
+                      <div class="flex-grow-1">
+                        <p>
+                          <strong>Joseph William</strong
+                          ><span class="n-time text-muted"
+                            ><i class="icon feather icon-clock m-r-10"></i>10
+                            min</span
+                          >
+                        </p>
+                        <p>Prchace New Theme and make payment</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="notification">
+                    <div class="d-flex">
+                      <img
+                        class="img-radius"
+                        src="assets/images/user/avatar-3.jpg"
+                        alt="Generic placeholder image"
+                      />
+                      <div class="flex-grow-1">
+                        <p>
+                          <strong>Sara Soudein</strong
+                          ><span class="n-time text-muted"
+                            ><i class="icon feather icon-clock m-r-10"></i>12
+                            min</span
+                          >
+                        </p>
+                        <p>currently login</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="notification">
+                    <div class="d-flex">
+                      <img
+                        class="img-radius"
+                        src="assets/images/user/avatar-1.jpg"
+                        alt="Generic placeholder image"
+                      />
+                      <div class="flex-grow-1">
+                        <p>
+                          <strong>Joseph William</strong
+                          ><span class="n-time text-muted"
+                            ><i class="icon feather icon-clock m-r-10"></i>30
+                            min</span
+                          >
+                        </p>
+                        <p>Prchace New Theme and make payment</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="notification">
+                    <div class="d-flex">
+                      <img
+                        class="img-radius"
+                        src="assets/images/user/avatar-3.jpg"
+                        alt="Generic placeholder image"
+                      />
+                      <div class="flex-grow-1">
+                        <p>
+                          <strong>Sara Soudein</strong
+                          ><span class="n-time text-muted"
+                            ><i class="icon feather icon-clock m-r-10"></i>1
+                            hour</span
+                          >
+                        </p>
+                        <p>currently login</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="notification">
+                    <div class="d-flex">
+                      <img
+                        class="img-radius"
+                        src="assets/images/user/avatar-1.jpg"
+                        alt="Generic placeholder image"
+                      />
+                      <div class="flex-grow-1">
+                        <p>
+                          <strong>Joseph William</strong
+                          ><span class="n-time text-muted"
+                            ><i class="icon feather icon-clock m-r-10"></i>2
+                            hour</span
+                          >
+                        </p>
+                        <p>Prchace New Theme and make payment</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="noti-footer">
+                  <a href="#!">show all</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown drp-user">
+              <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+                <i class="icon feather icon-settings"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-end profile-notification">
+                <div class="pro-head">
+                  <img
+                    src="assets/images/user/avatar-1.jpg"
+                    class="img-radius"
+                    alt="User-Profile-Image"
+                  />
+                  <span>John Doe</span>
+                  <a href="signin.html" class="dud-logout" title="Logout">
+                    <i class="feather icon-log-out"></i>
+                  </a>
+                </div>
+                <ul class="pro-body">
+                  <li>
+                    <a href="#!" class="dropdown-item"
+                      ><i class="feather icon-settings"></i> Settings</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#!" class="dropdown-item"
+                      ><i class="feather icon-user"></i> Profile</a
+                    >
+                  </li>
+                  <li>
+                    <a href="message.html" class="dropdown-item"
+                      ><i class="feather icon-mail"></i> My Messages</a
+                    >
+                  </li>
+                  <li>
+                    <a href="signin.html" class="dropdown-item text-danger"
+                      ><i class="feather icon-lock"></i> Log out</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- [ Header ] end -->
+
+    <!-- [ Main Content ] start -->
+    <div class="pcoded-main-container">
+      <div class="pcoded-wrapper">
+        <div class="pcoded-content">
+          <div class="pcoded-inner-content">
+            <div class="main-body">
+              <div class="page-wrapper">
+                <div class="row">
+                  <div class="col-md-3 col-sm-12">
+                    <ul
+                      class="nav flex-column nav-pills position-sticky"
+                      id="v-pills-tab"
+                      role="tablist"
+                      aria-orientation="vertical"
+                      style="top: 70px"
+                    >
+                      <li>
+                        <a
+                          class="nav-link text-start"
+                          id="v-pills-binary-tab"
+                          data-bs-toggle="pill"
+                          href="#v-pills-binary"
+                          role="tab"
+                          aria-controls="v-pills-binary"
+                          aria-selected="true"
+                          >Binary Commission</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="nav-link text-start"
+                          id="v-pills-direct-tab"
+                          data-bs-toggle="pill"
+                          href="#v-pills-direct"
+                          role="tab"
+                          aria-controls="v-pills-direct"
+                          aria-selected="false"
+                          >Direct Commission</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="nav-link text-start active"
+                          id="v-pills-level-tab"
+                          data-bs-toggle="pill"
+                          href="#v-pills-level"
+                          role="tab"
+                          aria-controls="v-pills-level"
+                          aria-selected="false"
+                          >Level Commission</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="nav-link text-start"
+                          id="v-pills-rank-tab"
+                          data-bs-toggle="pill"
+                          href="#v-pills-rank"
+                          role="tab"
+                          aria-controls="v-pills-rank"
+                          aria-selected="false"
+                          >Rank Commission</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="nav-link text-start"
+                          id="v-pills-history-tab"
+                          data-bs-toggle="pill"
+                          href="#v-pills-history"
+                          role="tab"
+                          aria-controls="v-pills-history"
+                          aria-selected="false"
+                          >History Commission</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-9 col-sm-12">
+                    <div class="tab-content" id="v-pills-tabContent">
+                      <div
+                        class="tab-pane fade"
+                        id="v-pills-binary"
+                        role="tabpanel"
+                        aria-labelledby="v-pills-binary-tab"
+                      >
+                        <div class="card prod-p-card bg-c-green">
+                          <div class="card-body py-5">
+                            <div class="row align-items-center">
+                              <div class="col">
+                                <h6 class="m-b-0 text-white fs-3 fw-bold">
+                                  Total Estimated Commissions:
+                                </h6>
+                              </div>
+                              <div class="col">
+                                <h3 class="m-b-0 text-white fs-2">$7000</h3>
+                              </div>
+                              <div class="col-auto">
+                                <i
+                                  class="fas fa-dollar-sign text-c-green f-18"
+                                ></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card p-4">
+                          <div class="d-flex flex-column align-items-center">
+                            <img
+                              src="assets/images/bg-images/10.jpg"
+                              class="img-fluid rounded-pill mb-2"
+                              width="50"
+                              alt="User"
+                            />
+                            <div
+                              class="card border text-center p-3 mb-0 rounded-3 d-flex justify-content-center align-items-center flex-row gap-2"
+                            >
+                              <div class="w-50">
+                                <p>No. of Collected PVs</p>
+                                <p class="fw-bold fs-4">6000 PVs</p>
+                              </div>
+                              <div
+                                class="border mx-auto"
+                                style="height: 60px; width: 1px"
+                              ></div>
+                              <div class="w-50">
+                                <p>Estimated Binary Commission</p>
+                                <p class="fw-bold fs-4">$3000</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="border mx-auto"
+                            style="height: 60px; width: 1px"
+                          ></div>
+                          <div class="border-top w-50 mx-auto"></div>
+
+                          <div class="d-flex justify-content-center gap-5 mt-3">
+                            <div class="d-flex flex-column align-items-center">
+                              <img
+                                src="assets/images/bg-images/10.jpg"
+                                class="img-fluid rounded-pill mb-2"
+                                width="50"
+                                alt="User"
+                              />
+                              <div
+                                class="card border text-center p-3 mb-0 rounded-3 d-flex justify-content-center align-items-center flex-row gap-2"
+                              >
+                                <div class="w-50">
+                                  <p>No. of Collected PVs</p>
+                                  <p class="fw-bold fs-4">6000 PVs</p>
+                                </div>
+                                <div
+                                  class="border mx-auto"
+                                  style="height: 60px; width: 1px"
+                                ></div>
+                                <div class="w-50">
+                                  <p>Estimated Binary Commission</p>
+                                  <p class="fw-bold fs-4">$3000</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                              <img
+                                src="assets/images/bg-images/10.jpg"
+                                class="img-fluid rounded-pill mb-2"
+                                width="50"
+                                alt="User"
+                              />
+                              <div
+                                class="card border text-center p-3 mb-0 rounded-3 d-flex justify-content-center align-items-center flex-row gap-2"
+                              >
+                                <div class="w-50">
+                                  <p>No. of Collected PVs</p>
+                                  <p class="fw-bold fs-4">6000 PVs</p>
+                                </div>
+                                <div
+                                  class="border mx-auto"
+                                  style="height: 60px; width: 1px"
+                                ></div>
+                                <div class="w-50">
+                                  <p>Estimated Binary Commission</p>
+                                  <p class="fw-bold fs-4">$3000</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header">
+                            <h4>Potential Clients:</h4>
+                          </div>
+                          <div class="card-body">
+                            <div class="dt-responsive table-responsive">
+                              <table
+                                id="order-table"
+                                class="table table-striped table-bordered nowrap"
+                              >
+                                <thead>
+                                  <tr>
+                                    <th>Date</th>
+                                    <th>Left Leg Collected PVs</th>
+                                    <th>Right Leg Collected PVs</th>
+                                    <th class="text-center">Action</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>15/7/2003</td>
+                                    <td>1500 PV</td>
+                                    <td>100 PV</td>
+                                    <td class="text-center">
+                                      <a href="#!">See More Details</a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>15/7/2003</td>
+                                    <td>1500 PV</td>
+                                    <td>100 PV</td>
+                                    <td class="text-center">
+                                      <a href="#!">See More Details</a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>15/7/2003</td>
+                                    <td>1500 PV</td>
+                                    <td>100 PV</td>
+                                    <td class="text-center">
+                                      <a href="#!">See More Details</a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>15/7/2003</td>
+                                    <td>1500 PV</td>
+                                    <td>100 PV</td>
+                                    <td class="text-center">
+                                      <a href="#!">See More Details</a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Totals:</td>
+                                    <td>5000 PV</td>
+                                    <td>6000 PV</td>
+                                    <td rowspan="2" class="text-center">
+                                      <p class="fw-bold">
+                                        Estimated Commissions
+                                      </p>
+                                      <span class="fs-4">$9000</span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Remaining PVs:</td>
+                                    <td>0 PV</td>
+                                    <td>1000 PV</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="v-pills-direct"
+                        role="tabpanel"
+                        aria-labelledby="v-pills-direct-tab"
+                      >
+                        <div class="card prod-p-card bg-c-green">
+                          <div class="card-body py-5">
+                            <div class="row align-items-center">
+                              <div class="col">
+                                <h6 class="m-b-0 text-white fs-2 fw-bold">
+                                  Total Commissions:
+                                </h6>
+                              </div>
+                              <div class="col">
+                                <h3 class="m-b-0 text-white fs-2">$2000</h3>
+                              </div>
+                              <div class="col-auto">
+                                <i
+                                  class="fas fa-dollar-sign text-c-green f-18"
+                                ></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="card">
+                              <div class="card-header">
+                                <h5>Direct Commission For Sales</h5>
+                              </div>
+                              <div class="card-body">
+                                <div class="mb-3">
+                                  <label class="form-label"
+                                    >Number of Generated Links</label
+                                  >
+                                  <input
+                                    type="number"
+                                    class="form-control"
+                                    placeholder="Number of Generated Links"
+                                  />
+                                </div>
+                                <div class="mb-3">
+                                  <label class="form-label"
+                                    >Number of Actual Sales</label
+                                  >
+                                  <input
+                                    type="number"
+                                    class="form-control"
+                                    placeholder="Number of Actual Sales"
+                                  />
+                                </div>
+                                <div class="mb-3">
+                                  <label class="form-label"
+                                    >Number of Potential Clients</label
+                                  >
+                                  <input
+                                    type="number"
+                                    class="form-control"
+                                    placeholder="Number of Potential Clients"
+                                  />
+                                </div>
+                                <div class="mb-3">
+                                  <label class="form-label"
+                                    >Estimated Commissions</label
+                                  >
+                                  <input
+                                    type="number"
+                                    class="form-control"
+                                    placeholder="Estimated Commissions"
+                                  />
+                                </div>
+                              </div>
+                              <div class="card-footer">
+                                <button class="btn btn-primary w-100">
+                                  Generate Link
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card">
+                              <div class="card-header">
+                                <h5>Direct Commission For Marketers</h5>
+                              </div>
+                              <div class="card-body">
+                                <div class="mb-3">
+                                  <label class="form-label"
+                                    >Number of Generated Links</label
+                                  >
+                                  <input
+                                    type="number"
+                                    class="form-control"
+                                    placeholder="Number of Generated Links"
+                                  />
+                                </div>
+                                <div class="mb-3">
+                                  <label class="form-label"
+                                    >Number of Actual Sales</label
+                                  >
+                                  <input
+                                    type="number"
+                                    class="form-control"
+                                    placeholder="Number of Actual Sales"
+                                  />
+                                </div>
+                                <div class="mb-3">
+                                  <label class="form-label"
+                                    >Number of Potential Clients</label
+                                  >
+                                  <input
+                                    type="number"
+                                    class="form-control"
+                                    placeholder="Number of Potential Clients"
+                                  />
+                                </div>
+                                <div class="mb-3">
+                                  <label class="form-label"
+                                    >Estimated Commissions</label
+                                  >
+                                  <input
+                                    type="number"
+                                    class="form-control"
+                                    placeholder="Estimated Commissions"
+                                  />
+                                </div>
+                              </div>
+                              <div class="card-footer">
+                                <button class="btn btn-primary w-100">
+                                  Generate Link
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header">
+                            <h4>Potential Clients:</h4>
+                          </div>
+                          <div class="card-body">
+                            <div class="dt-responsive table-responsive">
+                              <table
+                                id="order-table"
+                                class="table table-striped table-bordered nowrap"
+                              >
+                                <thead>
+                                  <tr>
+                                    <th>Registration Date</th>
+                                    <th>Username</th>
+                                    <th>Phone Number</th>
+                                    <th>Type</th>
+                                    <th>Status</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>15/7/2003</td>
+                                    <td>Ali Shahin</td>
+                                    <td>01010385495</td>
+                                    <td>Software Engineer</td>
+                                    <td>Interested</td>
+                                  </tr>
+                                  <tr>
+                                    <td>15/7/2003</td>
+                                    <td>Ali Shahin</td>
+                                    <td>01010385495</td>
+                                    <td>Software Engineer</td>
+                                    <td>Interested</td>
+                                  </tr>
+                                  <tr>
+                                    <td>15/7/2003</td>
+                                    <td>Ali Shahin</td>
+                                    <td>01010385495</td>
+                                    <td>Software Engineer</td>
+                                    <td>Interested</td>
+                                  </tr>
+                                  <tr>
+                                    <td>15/7/2003</td>
+                                    <td>Ali Shahin</td>
+                                    <td>01010385495</td>
+                                    <td>Software Engineer</td>
+                                    <td>Interested</td>
+                                  </tr>
+                                  <tr>
+                                    <td>15/7/2003</td>
+                                    <td>Ali Shahin</td>
+                                    <td>01010385495</td>
+                                    <td>Software Engineer</td>
+                                    <td>Interested</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade show active"
+                        id="v-pills-level"
+                        role="tabpanel"
+                        aria-labelledby="v-pills-level-tab"
+                      >
+                        <div class="card prod-p-card bg-c-green">
+                          <div class="card-body py-5">
+                            <div class="row align-items-center">
+                              <div class="col">
+                                <h6 class="m-b-0 text-white fs-2 fw-bold">
+                                  Total Commissions:
+                                </h6>
+                              </div>
+                              <div class="col">
+                                <h3 class="m-b-0 text-white fs-2">$290</h3>
+                              </div>
+                              <div class="col-auto">
+                                <i
+                                  class="fas fa-dollar-sign text-c-green f-18"
+                                ></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card p-4">
+                          <div class="d-flex justify-content-between">
+                            <h4 class="fw-bold">Level Commission:</h4>
+                            <p class="text-start">
+                              number of Cheques in level 001 : 2 , Commission
+                              Rate: 3% <br />
+                              number of Cheques in level 002 : 4 , Commission
+                              Rate: 2% <br />
+                              number of Cheques in level 003 : 8 , Commission
+                              Rate: 1%
+                            </p>
+                          </div>
+                          <div class="table-border-style">
+                            <div class="table-responsive">
+                              <table class="table table-bordered">
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <div
+                                        class="d-flex justify-content-evenly text-center align-items-center"
+                                      >
+                                        <img
+                                          src="assets/images/auth-bg-big.jpg"
+                                          style="width: 60px; height: 60px"
+                                          class="rounded-circle"
+                                        />
+                                        <img
+                                          src="assets/images/auth-bg-big.jpg"
+                                          style="width: 60px; height: 60px"
+                                          class="rounded-circle"
+                                        />
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <div
+                                        class="d-flex align-items-center text-center justify-content-center"
+                                      >
+                                        <p class="fw-bold mb-0">
+                                          Level 001 <br />
+                                          <span class="text-success"
+                                            >2 Cheques * 3%</span
+                                          >
+                                        </p>
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <div
+                                        class="d-flex align-items-center text-center justify-content-center"
+                                      >
+                                        <h5 class="fw-bold">
+                                          Estimated Commission <br />
+                                          <span class="text-success">$180</span>
+                                        </h5>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div
+                                        class="d-flex justify-content-evenly text-center align-items-center"
+                                      >
+                                        <div
+                                          class="d-flex align-items-center justify-content-center gap-2"
+                                        >
+                                          <img
+                                            src="assets/images/auth-bg-big.jpg"
+                                            style="width: 40px; height: 40px"
+                                            class="rounded-circle"
+                                          />
+                                          <img
+                                            src="assets/images/auth-bg-big.jpg"
+                                            style="width: 40px; height: 40px"
+                                            class="rounded-circle"
+                                          />
+                                        </div>
+                                        <div
+                                          class="d-flex align-items-center justify-content-center gap-2"
+                                        >
+                                          <img
+                                            src="assets/images/auth-bg-big.jpg"
+                                            style="width: 40px; height: 40px"
+                                            class="rounded-circle"
+                                          />
+                                          <img
+                                            src="assets/images/auth-bg-big.jpg"
+                                            style="width: 40px; height: 40px"
+                                            class="rounded-circle"
+                                          />
+                                        </div>
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <div
+                                        class="d-flex align-items-center text-center justify-content-center"
+                                      >
+                                        <p class="fw-bold mb-0">
+                                          Level 002 <br />
+                                          <span class="text-success"
+                                            >2 Cheques * 2%</span
+                                          >
+                                        </p>
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <div
+                                        class="d-flex align-items-center text-center justify-content-center"
+                                      >
+                                        <h5 class="fw-bold">
+                                          Estimated Commission <br />
+                                          <span class="text-success">$60</span>
+                                        </h5>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div
+                                        class="d-flex justify-content-evenly text-center align-items-center"
+                                      >
+                                        <div
+                                          class="d-flex justify-content-center gap-1 align-items-center"
+                                        >
+                                          <img
+                                            src="assets/images/auth-bg-big.jpg"
+                                            style="width: 30px; height: 30px"
+                                            class="rounded-circle"
+                                          />
+                                          <img
+                                            src="assets/images/auth-bg-big.jpg"
+                                            style="width: 30px; height: 30px"
+                                            class="rounded-circle"
+                                          />
+                                        </div>
+                                        <div
+                                          class="d-flex justify-content-center gap-1 align-items-center"
+                                        >
+                                          <img
+                                            src="assets/images/auth-bg-big.jpg"
+                                            style="width: 30px; height: 30px"
+                                            class="rounded-circle"
+                                          />
+                                          <img
+                                            src="assets/images/auth-bg-big.jpg"
+                                            style="width: 30px; height: 30px"
+                                            class="rounded-circle"
+                                          />
+                                        </div>
+                                        <div
+                                          class="d-flex justify-content-center gap-1 align-items-center"
+                                        >
+                                          <img
+                                            src="assets/images/auth-bg-big.jpg"
+                                            style="width: 30px; height: 30px"
+                                            class="rounded-circle"
+                                          />
+                                          <img
+                                            src="assets/images/auth-bg-big.jpg"
+                                            style="width: 30px; height: 30px"
+                                            class="rounded-circle"
+                                          />
+                                        </div>
+                                        <div
+                                          class="d-flex justify-content-center gap-1 align-items-center"
+                                        >
+                                          <img
+                                            src="assets/images/auth-bg-big.jpg"
+                                            style="width: 30px; height: 30px"
+                                            class="rounded-circle"
+                                          />
+                                          <img
+                                            src="assets/images/auth-bg-big.jpg"
+                                            style="width: 30px; height: 30px"
+                                            class="rounded-circle"
+                                          />
+                                        </div>
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <div
+                                        class="d-flex align-items-center text-center justify-content-center"
+                                      >
+                                        <p class="fw-bold mb-0">
+                                          Level 003 <br />
+                                          <span class="text-success"
+                                            >3 Cheques * 1%</span
+                                          >
+                                        </p>
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <div
+                                        class="d-flex align-items-center text-center justify-content-center"
+                                      >
+                                        <h5 class="fw-bold">
+                                          Estimated Commission <br />
+                                          <span class="text-success">$50</span>
+                                        </h5>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+
+                          <!-- <div class="row justify-content-center mb-3">
+                            <div class="border p-3">
+                              <div class="row">
+                                <div class="col-6 d-flex justify-content-evenly text-center align-items-center">
+                                  <img
+                                    src="assets/images/auth-bg-big.jpg"
+                                    style="width: 60px; height: 60px"
+                                    class="rounded-circle"
+                                  />
+                                  <img
+                                    src="assets/images/auth-bg-big.jpg"
+                                    style="width: 60px; height: 60px"
+                                    class="rounded-circle"
+                                  />
+                                </div>
+                                <div
+                                  class="col-2 d-flex align-items-center text-center"
+                                >
+                                  <p class="fw-bold mb-0">
+                                    Level 001 <br />
+                                    <span class="text-success">2 Cheques * 3%</span>
+                                  </p>
+                                </div>
+                                <div
+                                  class="col-4 d-flex align-items-center text-center"
+                                >
+                                  <h5 class="fw-bold">
+                                    Estimated Commission <br />
+                                    <span class="text-success">$180</span>
+                                  </h5>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row justify-content-center mb-3">
+                            <div class="border p-3">
+                              <div class="row">
+                                <div class="col-6 d-flex justify-content-evenly text-center align-items-center">
+                                  <div class="d-flex align-items-center justify-content-center gap-2">
+                                    <img
+                                      src="assets/images/auth-bg-big.jpg"
+                                      style="width: 40px; height: 40px"
+                                      class="rounded-circle"
+                                    />
+                                    <img
+                                      src="assets/images/auth-bg-big.jpg"
+                                      style="width: 40px; height: 40px"
+                                      class="rounded-circle"
+                                    />
+                                  </div>
+                                  <div class="d-flex align-items-center justify-content-center gap-2">
+                                    <img
+                                      src="assets/images/auth-bg-big.jpg"
+                                      style="width: 40px; height: 40px"
+                                      class="rounded-circle"
+                                    />
+                                    <img
+                                      src="assets/images/auth-bg-big.jpg"
+                                      style="width: 40px; height: 40px"
+                                      class="rounded-circle"
+                                    />
+                                  </div>
+                                </div>
+                                <div
+                                  class="col-2 d-flex align-items-center text-center"
+                                >
+                                  <p class="fw-bold mb-0">
+                                    Level 002 <br />
+                                    <span class="text-success">2 Cheques * 2%</span>
+                                  </p>
+                                </div>
+                                <div
+                                  class="col-4 d-flex align-items-center text-center"
+                                >
+                                  <h5 class="fw-bold">
+                                    Estimated Commission <br />
+                                    <span class="text-success">$60</span>
+                                  </h5>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row justify-content-center mb-3">
+                            <div class="border p-3">
+                              <div class="row">
+                                <div class="col-6 d-flex justify-content-evenly text-center align-items-center">
+                                  <div class="d-flex justify-content-center gap-1  align-items-center">
+                                    <img
+                                      src="assets/images/auth-bg-big.jpg"
+                                      style="width: 30px; height: 30px"
+                                      class="rounded-circle"
+                                    />
+                                    <img
+                                      src="assets/images/auth-bg-big.jpg"
+                                      style="width: 30px; height: 30px"
+                                      class="rounded-circle"
+                                    />
+                                  </div>
+                                  <div class="d-flex justify-content-center gap-1  align-items-center">
+                                    <img
+                                      src="assets/images/auth-bg-big.jpg"
+                                      style="width: 30px; height: 30px"
+                                      class="rounded-circle"
+                                    />
+                                    <img
+                                      src="assets/images/auth-bg-big.jpg"
+                                      style="width: 30px; height: 30px"
+                                      class="rounded-circle"
+                                    />
+                                  </div><div class="d-flex justify-content-center gap-1  align-items-center">
+                                    <img
+                                      src="assets/images/auth-bg-big.jpg"
+                                      style="width: 30px; height: 30px"
+                                      class="rounded-circle"
+                                    />
+                                    <img
+                                      src="assets/images/auth-bg-big.jpg"
+                                      style="width: 30px; height: 30px"
+                                      class="rounded-circle"
+                                    />
+                                  </div>
+                                  <div class="d-flex justify-content-center gap-1  align-items-center">
+                                    <img
+                                      src="assets/images/auth-bg-big.jpg"
+                                      style="width: 30px; height: 30px"
+                                      class="rounded-circle"
+                                    />
+                                    <img
+                                      src="assets/images/auth-bg-big.jpg"
+                                      style="width: 30px; height: 30px"
+                                      class="rounded-circle"
+                                    />
+                                  </div>
+                                 
+                                </div>
+                                <div
+                                  class="col-2 d-flex align-items-center text-center"
+                                >
+                                  <p class="fw-bold mb-0">
+                                    Level 001 <br />
+                                    <span class="text-success">2 Cheques * 3%</span>
+                                  </p>
+                                </div>
+                                <div
+                                  class="col-4 d-flex align-items-center text-center"
+                                >
+                                  <h5 class="fw-bold">
+                                    Estimated Commission <br />
+                                    <span class="text-success">$180</span>
+                                  </h5>
+                                </div>
+                              </div>
+                            </div>
+                          </div> -->
+                        </div>
+                        <div class="card">
+                          <div class="card-header">
+                            <h4>Level Commission Logs:</h4>
+                          </div>
+                          <div class="card-body">
+                            <div class="dt-responsive table-responsive">
+                              <table
+                                id="order-table"
+                                class="table table-striped table-bordered nowrap"
+                              >
+                                <thead>
+                                  <tr>
+                                    <th>Code</th>
+                                    <th>Cheque amount</th>
+                                    <th>Commission Rate</th>
+                                    <th>Commission Amount</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>0220101</td>
+                                    <td>$3000</td>
+                                    <td>3%</td>
+                                    <td>$60</td>
+                                  </tr>
+                                  <tr>
+                                    <td>0220101</td>
+                                    <td>$3000</td>
+                                    <td>3%</td>
+                                    <td>$60</td>
+                                  </tr>
+                                  <tr>
+                                    <td>0220101</td>
+                                    <td>$3000</td>
+                                    <td>3%</td>
+                                    <td>$60</td>
+                                  </tr>
+                                  <tr>
+                                    <td>0220101</td>
+                                    <td>$3000</td>
+                                    <td>3%</td>
+                                    <td>$60</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="v-pills-rank"
+                        role="tabpanel"
+                        aria-labelledby="v-pills-rank-tab"
+                      >
+                        <div class="card prod-p-card bg-c-green">
+                          <div class="card-body py-5">
+                            <div class="row align-items-center">
+                              <div class="col">
+                                <h6 class="m-b-0 text-white fs-2 fw-bold">
+                                  Total Commissions:
+                                </h6>
+                              </div>
+                              <div class="col">
+                                <h3 class="m-b-0 text-white fs-2">$0</h3>
+                              </div>
+                              <div class="col-auto">
+                                <i
+                                  class="fas fa-dollar-sign text-c-green f-18"
+                                ></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card p-4 w-75 mx-auto">
+                          <div class="text-center">
+                            <i
+                              class="mdi mdi-star-circle"
+                              style="font-size: 100px"
+                            ></i>
+                            <h2>Beginner Marketer</h2>
+                            <p class="fs-6">
+                              Start your journey! Recruit your First Member to
+                              drive progress forward.
+                            </p>
+                            <div class="progress mb-4">
+                              <div
+                                class="progress-bar progress-primary"
+                                role="progressbar"
+                                style="width: 50%"
+                                aria-valuenow="50"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              >
+                                50%
+                              </div>
+                            </div>
+                            <p>
+                              Recruit two additional members to advance to
+                              Active Marketer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="v-pills-history"
+                        role="tabpanel"
+                        aria-labelledby="v-pills-history-tab"
+                      >
+                        <div class="card prod-p-card bg-c-green">
+                          <div class="card-body py-5">
+                            <div class="row align-items-center">
+                              <div class="col">
+                                <h6 class="m-b-0 text-white fs-2 fw-bold">
+                                  Total Commissions:
+                                </h6>
+                              </div>
+                              <div class="col">
+                                <h3 class="m-b-0 text-white fs-2">$7000</h3>
+                              </div>
+                              <div class="col-auto">
+                                <i
+                                  class="fas fa-dollar-sign text-c-green f-18"
+                                ></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div id="am-pie-2" style="height: 400px"></div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="card">
+                              <div
+                                class="card-header d-flex justify-content-between align-items-center fw-bold"
+                              >
+                                <h4>Binary Commission</h4>
+                                <h4>$3000</h4>
+                              </div>
+                              <div class="card-body">
+                                <span class="px-3 d-block"
+                                  ><i
+                                    class="fas fa-circle text-c-blue f-10 m-r-5"
+                                  ></i
+                                  ><strong class="fw-bold"
+                                    >Collected Left PVs: </strong
+                                  >5000 PVs</span
+                                >
+                                <hr />
+                                <span class="px-3 d-block"
+                                  ><i
+                                    class="fas fa-circle text-c-blue f-10 m-r-5"
+                                  ></i
+                                  ><strong class="fw-bold"
+                                    >Collected Left PVs: </strong
+                                  >5000 PVs</span
+                                >
+                                <hr />
+                                <span class="px-3 d-block"
+                                  ><i
+                                    class="fas fa-circle text-c-blue f-10 m-r-5"
+                                  ></i
+                                  ><strong class="fw-bold"
+                                    >Collected Left PVs: </strong
+                                  >5000 PVs</span
+                                >
+                                <hr />
+                                <span class="px-3 d-block"
+                                  ><i
+                                    class="fas fa-circle text-c-blue f-10 m-r-5"
+                                  ></i
+                                  ><strong class="fw-bold"
+                                    >Collected Left PVs: </strong
+                                  >5000 PVs</span
+                                >
+                                <hr />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card">
+                              <div
+                                class="card-header d-flex justify-content-between align-items-center fw-bold"
+                              >
+                                <h4>Direct Commission</h4>
+                                <h4>$1000</h4>
+                              </div>
+                              <div class="card-body">
+                                <span class="px-3 d-block"
+                                  ><i
+                                    class="fas fa-circle text-c-blue f-10 m-r-5"
+                                  ></i
+                                  ><strong class="fw-bold"
+                                    >Collected Left PVs: </strong
+                                  >5000 PVs</span
+                                >
+                                <hr />
+                                <span class="px-3 d-block"
+                                  ><i
+                                    class="fas fa-circle text-c-blue f-10 m-r-5"
+                                  ></i
+                                  ><strong class="fw-bold"
+                                    >Collected Left PVs: </strong
+                                  >5000 PVs</span
+                                >
+                                <hr />
+                                <span class="px-3 d-block"
+                                  ><i
+                                    class="fas fa-circle text-c-blue f-10 m-r-5"
+                                  ></i
+                                  ><strong class="fw-bold"
+                                    >Collected Left PVs: </strong
+                                  >5000 PVs</span
+                                >
+                                <hr />
+                                <span class="px-3 d-block"
+                                  ><i
+                                    class="fas fa-circle text-c-blue f-10 m-r-5"
+                                  ></i
+                                  ><strong class="fw-bold"
+                                    >Collected Left PVs: </strong
+                                  >5000 PVs</span
+                                >
+                                <hr />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="card">
+                              <div
+                                class="card-header d-flex justify-content-between align-items-center fw-bold"
+                              >
+                                <h4>Rank Commission</h4>
+                                <h4>$0</h4>
+                              </div>
+                              <div class="card-body"></div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card">
+                              <div
+                                class="card-header d-flex justify-content-between align-items-center fw-bold"
+                              >
+                                <h4>Level Commission</h4>
+                                <h4>$3000</h4>
+                              </div>
+                              <div class="card-body">
+                                <span class="px-3 d-block"
+                                  ><i
+                                    class="fas fa-circle text-c-blue f-10 m-r-5"
+                                  ></i
+                                  ><strong class="fw-bold"
+                                    >Collected Left PVs: </strong
+                                  >5000 PVs</span
+                                >
+                                <hr />
+                                <span class="px-3 d-block"
+                                  ><i
+                                    class="fas fa-circle text-c-blue f-10 m-r-5"
+                                  ></i
+                                  ><strong class="fw-bold"
+                                    >Collected Left PVs: </strong
+                                  >5000 PVs</span
+                                >
+                                <hr />
+                                <span class="px-3 d-block"
+                                  ><i
+                                    class="fas fa-circle text-c-blue f-10 m-r-5"
+                                  ></i
+                                  ><strong class="fw-bold"
+                                    >Collected Left PVs: </strong
+                                  >5000 PVs</span
+                                >
+                                <hr />
+                                <span class="px-3 d-block"
+                                  ><i
+                                    class="fas fa-circle text-c-blue f-10 m-r-5"
+                                  ></i
+                                  ><strong class="fw-bold"
+                                    >Collected Left PVs: </strong
+                                  >5000 PVs</span
+                                >
+                                <hr />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header">
+                            <h4>Commission Logs:</h4>
+                          </div>
+                          <div class="card-body">
+                            <div class="dt-responsive table-responsive">
+                              <table
+                                id="order-table"
+                                class="table table-striped table-bordered nowrap"
+                              >
+                                <thead>
+                                  <tr>
+                                    <th>Date</th>
+                                    <th>Commission Type</th>
+                                    <th>Source</th>
+                                    <th>Amount</th>
+                                    <th>Status</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>2021-09-01</td>
+                                    <td>Binary Commission</td>
+                                    <td>John Doe</td>
+                                    <td>$1000</td>
+                                    <td>Approved</td>
+                                  </tr>
+                                  <tr>
+                                    <td>2021-09-01</td>
+                                    <td>Direct Commission</td>
+                                    <td>John Doe</td>
+                                    <td>$1000</td>
+                                    <td>Approved</td>
+                                  </tr>
+                                  <tr>
+                                    <td>2021-09-01</td>
+                                    <td>Level Commission</td>
+                                    <td>John Doe</td>
+                                    <td>$1000</td>
+                                    <td>Approved</td>
+                                  </tr>
+                                  <tr>
+                                    <td>2021-09-01</td>
+                                    <td>Rank Commission</td>
+                                    <td>John Doe</td>
+                                    <td>$1000</td>
+                                    <td>Approved</td>
+                                  </tr>
+                                  <tr>
+                                    <td>2021-09-01</td>
+                                    <td>Binary Commission</td>
+                                    <td>John Doe</td>
+                                    <td>$1000</td>
+                                    <td>Approved</td>
+                                  </tr>
+                                  <tr>
+                                    <td>2021-09-01</td>
+                                    <td>Direct Commission</td>
+                                    <td>John Doe</td>
+                                    <td>$1000</td>
+                                    <td>Approved</td>
+                                  </tr>
+                                  <tr>
+                                    <td>2021-09-01</td>
+                                    <td>Level Commission</td>
+                                    <td>John Doe</td>
+                                    <td>$1000</td>
+                                    <td>Approved</td>
+                                  </tr>
+                                  <tr>
+                                    <td>2021-09-01</td>
+                                    <td>Rank Commission</td>
+                                    <td>John Doe</td>
+                                    <td>$1000</td>
+                                    <td>Approved</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- [ Main Content ] end -->
+
+    <!-- [ Floating Whatsapp ] start -->
+    <div
+      class="position-fixed bottom-0 end-0 m-4 rounded-pill bg-success text-white d-flex justify-content-center align-center"
+      style="width: 50px; height: 50px; cursor: pointer"
+    >
+      <i class="fab fa-whatsapp fs-3 mt-2"></i>
+    </div>
+    <!-- [ Floating Whatsapp ] end -->
+
+    <script src="assets/js/vendor-all.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/pcoded.min.js"></script>
+
+    <!-- am chart js -->
+    <script src="assets/plugins/chart-am4/js/core.js"></script>
+    <script src="assets/plugins/chart-am4/js/charts.js"></script>
+    <script src="assets/plugins/chart-am4/js/animated.js"></script>
+    <script src="assets/plugins/chart-am4/js/maps.js"></script>
+    <script src="assets/plugins/chart-am4/js/worldLow.js"></script>
+
+    <!-- am-chart custom js -->
+    <script src="assets/js/pages/chart-am-custom.js"></script>
+
+    <!-- datatable Js -->
+    <script src="assets/plugins/data-tables/js/datatables.min.js"></script>
+    <script src="assets/js/pages/data-basic-custom.js"></script>
+  </body>
+</html>
