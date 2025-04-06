@@ -21,7 +21,7 @@
   </head>
   <body>
     <div class="auth-wrapper">
-      <div class="auth-content container">
+      <div class="auth-content container position-relative">
         <div class="card">
           <div class="row align-items-center">
             <div class="col-md-5 d-none d-md-block">
@@ -33,16 +33,24 @@
             </div>
             <div class="col-md-7">
               <div class="card-body">
-                <div class="d-flex justify-content-center">
-                  <img
-                    src="assets/images/logo-dark.svg"
-                    alt="logo"
-                    class="img-fluid mb-4"
-                  />
+                <div class="d-flex justify-content-center gap-4">
+                  <div
+                    class="d-flex justify-content-center align-items-center text-center gap-4"
+                  >
+                    <h2 class="fw-bold text-start f-w-400">
+                      Register today and let the Legend begin!
+                    </h2>
+                    <div class="d-flex justify-content-center flex-column">
+                      <img
+                        src="assets/images/user/avatar-2.jpg"
+                        alt="logo"
+                        class="img-fluid rounded-pill mx-auto"
+                      />
+                      <h6 class="text-nowrap">Sponsor Name</h6>
+                    </div>
+                  </div>
                 </div>
-                <h4 class="mb-3 f-w-400 text-center">
-                  Sign up into your account
-                </h4>
+
                 <form>
                   <div class="row">
                     <div class="mb-3 col-md-6">
@@ -122,68 +130,130 @@
                     </div>
                   </div>
                   <div class="row">
-                    <div class="mb-3 col-md-4">
+                    <div class="mb-3 col-md-6">
                       <label class="form-label" for="inputCity">Country</label>
-                      <select id="inputState" class="form-control">
-                        <option selected hidden>Please Choose Country</option>
+                      <select id="inputCountry" class="form-control">
+                        <option selected hidden class="text-secondary">
+                          Please Choose Country
+                        </option>
                         <option>Large select</option>
                       </select>
                     </div>
-                    <div class="mb-3 col-md-4">
+                    <div class="mb-3 col-md-6">
                       <label class="form-label" for="inputState">State</label>
                       <select id="inputState" class="form-control">
-                        <option selected hidden>Please Choose State</option>
+                        <option selected hidden class="text-secondary">
+                          Please Choose State
+                        </option>
                         <option>Large select</option>
                       </select>
                     </div>
-                    <div class="mb-3 col-md-4">
+                    <div class="mb-3 col-md-6">
                       <label class="form-label" for="inputCity">City</label>
                       <select id="inputCity" class="form-control">
-                        <option selected hidden>Please Choose City</option>
+                        <option selected hidden class="text-secondary">
+                          Please Choose City
+                        </option>
                         <option>Large select</option>
                       </select>
                     </div>
-                  </div>
-                  <div class="mb-3">
-                    <label class="form-label">Phone Number</label>
-                    <div class="input-group mb-3">
-                      <button
-                        class="btn btn-primary dropdown-toggle btn-show"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        +20
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
-                      <input
-                        type="text"
-                        class="form-control"
-                        aria-label="Text input with dropdown button"
-                        placeholder="Phone Number"
-                      />
+                    <div class="mb-3 col-md-6">
+                      <label class="form-label">Phone Number</label>
+                      <div class="input-group">
+                        <button
+                          class="btn btn-primary dropdown-toggle btn-show"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          +20
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">+20 - Egypt</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >+966 - Saudi Arabia</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">+971 - UAE</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">+965 - Kuwait</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">+974 - Qatar</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">+962 - Jordan</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">+961 - Lebanon</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">+212 - Morocco</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">+213 - Algeria</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">+1 - USA</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">+44 - UK</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">+33 - France</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">+49 - Germany</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">+39 - Italy</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">+34 - Spain</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">+81 - Japan</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">+86 - China</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">+91 - India</a>
+                          </li>
+                        </ul>
+                        <input
+                          type="text"
+                          class="form-control"
+                          aria-label="Text input with dropdown button"
+                          placeholder="Phone Number"
+                        />
+                      </div>
                     </div>
                   </div>
+
                   <div class="mb-3">
-                    <label class="form-label">ID or Passport </label>
-                    <div class="input-group mb-3">
+                    <label class="form-label">ID or Passport</label>
+                    <div class="input-group align-items-center">
                       <input
                         type="file"
                         class="form-control"
                         id="inputGroupFile01"
+                        accept="image/*"
+                        multiple
                       />
+                      <div
+                        id="previewContainer"
+                        style="display: flex; gap: 10px; flex-wrap: wrap"
+                        class="ms-2"
+                      ></div>
                     </div>
                   </div>
+
                   <button type="submit" class="btn btn-primary w-100">
                     Register
                   </button>
@@ -199,5 +269,33 @@
       </div>
     </div>
     <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const fileInput = document.getElementById("inputGroupFile01");
+      const previewContainer = document.getElementById("previewContainer");
+
+      fileInput.addEventListener("change", function () {
+        previewContainer.innerHTML = ""; // نفضي الصور القديمة
+
+        const files = Array.from(this.files);
+
+        files.forEach((file) => {
+          if (file.type.startsWith("image/")) {
+            const reader = new FileReader();
+
+            reader.onload = function (e) {
+              const img = document.createElement("img");
+              img.src = e.target.result;
+              img.style.width = "50px";
+              img.style.height = "50px";
+              img.style.objectFit = "cover";
+              img.style.borderRadius = "10px";
+              previewContainer.appendChild(img);
+            };
+
+            reader.readAsDataURL(file);
+          }
+        });
+      });
+    </script>
   </body>
 </html>

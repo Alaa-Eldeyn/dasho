@@ -342,93 +342,7 @@
     </header>
     <!-- [ Header ] end -->
 
-    <!-- [ Add Method Modal ] start -->
-    <div
-      id="confirmation"
-      class="modal fade"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="confirmationTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="confirmationTitle">
-              Confirmation
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <form>
-            <div class="modal-body">
-              <!-- <div class="mb-3">
-                <label class="form-label" for="exampleFormControlSelect1"
-                  >Select Method</label
-                >
-                <select class="form-control" id="exampleFormControlSelect1">
-                  <option>Digital Coins</option>
-                  <option>Bank Account</option>
-                  <option>Paypal</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <label class="form-label" for="exampleInputAccount1"
-                  >Account No.:</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="exampleInputAccount1"
-                  aria-describedby="AccountHelp"
-                  placeholder="Enter Account No."
-                />
-              </div>
-              <div class="mb-3">
-                <label class="form-label" for="exampleInputUserName1"
-                  >UserName:</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="exampleInputUserName1"
-                  aria-describedby="UserNameHelp"
-                  placeholder="Enter UserName"
-                />
-              </div>
-              <div class="mb-3">
-                <label class="form-label" for="exampleInputPhone1"
-                  >Phone Number:</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="exampleInputPhone1"
-                  aria-describedby="PhoneHelp"
-                  placeholder="Enter Phone No."
-                />
-              </div> -->
-<h5>Are you sure you want to delete payment method</h5>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-light"
-                data-bs-dismiss="modal"
-              >
-                Cancel
-              </button>
-              <button type="button" class="btn btn-danger">Yes, Delete</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <!-- [ Add Method Modal] end -->
+
 
     <!-- [ Main Content ] start -->
     <div class="pcoded-main-container">
@@ -437,84 +351,76 @@
           <div class="pcoded-inner-content">
             <div class="main-body">
               <div class="page-wrapper">
-                <div class="card">
-                  <div
-                    class="card-header d-flex justify-content-between align-items-center"
-                  >
-                    <h4 class="mb-3">Payment Methods</h4>
-                    <a href="addPaymentMethod.html"
-                      class="btn btn-primary"
-                    >
-                      Add Payment Method
-                    </a>
-                  </div>
-                  <div class="card-body">
-                    <div class="card p-4 mb-4 rounded-3">
-                      <div
-                        class="d-flex gap-4 justify-content-between align-items-center flex-column flex-lg-row"
-                      >
-                        <div
-                          class="d-flex justify-content-center align-items-center"
-                          style="width: 250px; height: 150px;"
-                        >
-                          <img
-                            src="assets/images/Rectangle 76.png"
-                            alt="Insta Pay"
-                            class="img-fluid rounded-3"
-                            style="width: 100%; height: 100%; object-fit:contain"
-                          />
-                        </div>
-                        <div class="flex-grow-1 align-self-start">
-                          <h2 class="fw-bold mb-3">Insta Pay</h2>
-                          <p class="fs-5">
-                            <strong class="fw-bold">UserName:</strong>
-                            alaa.eldeyn@gmail.com
-                          </p>
-                          <p class="fs-5">
-                            <strong class="fw-bold">Phone Number:</strong>
-                            01010385495
-                          </p>
-                        </div>
-                        <div>
-                          <button class="btn btn-primary">Edit</button>
-                          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#confirmation">Delete</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card p-4 mb-4 rounded-3">
-                      <div
-                        class="d-flex gap-4 justify-content-between align-items-center flex-column flex-lg-row"
-                      >
-                        <div
-                          class="d-flex justify-content-center align-items-center"
-                          style="width: 250px; height: 150px;"
-                        >
-                          <img
-                            src="assets/images/Rectangle 78.png"
-                            alt="Insta Pay"
-                            class="img-fluid rounded-3"
-                            style="width: 100%; height: 100%; object-fit:contain"
-                          />
-                        </div>
-                        <div class="flex-grow-1 align-self-start">
-                          <h2 class="fw-bold mb-3">Vodafone Cash</h2>
-                          <p class="fs-5">
-                            <strong class="fw-bold">UserName:</strong>
-                            alaa.eldeyn@gmail.com
-                          </p>
-                          <p class="fs-5">
-                            <strong class="fw-bold">Phone Number:</strong>
-                            01010385495
-                          </p>
-                        </div>
-                        <div>
-                          <button class="btn btn-primary">Edit</button>
-                          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="confirmation">Delete</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <div class="card p-4"><form style="max-width: 900px;">
+  <div class="card-body">
+    <div class="d-flex flex-column flex-lg-row gap-2">
+      <div class="flex-grow-1">
+        <div class="mb-3">
+          <label class="form-label" for="paymentMethod">Select Method</label>
+          <select class="form-control" id="paymentMethod">
+            <option value="coins">Digital Coins</option>
+            <option value="bank">Bank Account</option>
+            <option value="paypal">Paypal</option>
+          </select>
+        </div>
+
+    <div class="mb-3 bank-only d-none">
+      <label class="form-label" for="exampleInputAccount1">Account No.:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleInputAccount1"
+        placeholder="Enter Account No."
+      />
+    </div>
+
+    <div class="mb-3 bank-only d-none">
+      <label class="form-label" for="exampleInputUserName1">UserName:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleInputUserName1"
+        placeholder="Enter UserName"
+      />
+    </div>
+
+    <div class="mb-3 bank-only d-none">
+      <label class="form-label" for="exampleInputPhone1">Phone Number:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleInputPhone1"
+        placeholder="Enter Phone No."
+      />
+    </div>
+
+    <div class="mb-3 link-only d-none">
+      <label class="form-label" for="exampleInputLink1">Link:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleInputLink1"
+        placeholder="Enter Link"
+      />
+    </div>
+      <div class=" d-flex justify-content-end">
+    <button type="button" class="btn btn-light" data-bs-dismiss="modal">
+      Cancel
+    </button>
+    <button type="button" class="btn btn-primary">Add</button>
+  </div>
+      </div>
+      <div class="mb-3 ms-lg-3 mx-auto">
+        <img src="./assets/images/Rectangle 79.png" alt="" class="link-only d-none">
+        <img src="./assets/images/bank 1.png" alt="" class="bank-only d-none">
+      </div>
+    </div>
+
+  </div>
+
+
+</form>
+</div>
               </div>
             </div>
           </div>
@@ -536,5 +442,25 @@
     <script src="assets/plugins/bootstrap/js/popper.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/pcoded.min.js"></script>
+    <script>
+  const methodSelect = document.getElementById("paymentMethod");
+  const bankFields = document.querySelectorAll(".bank-only");
+  const linkField = document.querySelectorAll(".link-only");
+
+  methodSelect.addEventListener("change", function () {
+    if (this.value === "bank") {
+      bankFields.forEach((el) => el.classList.remove("d-none"));
+      linkField.forEach((el) => el.classList.add("d-none"));
+    } else {
+      bankFields.forEach((el) => el.classList.add("d-none"));
+      linkField.forEach((el) => el.classList.remove("d-none"));
+    }
+  });
+
+  window.addEventListener("DOMContentLoaded", () => {
+    methodSelect.dispatchEvent(new Event("change"));
+  });
+</script>
+
   </body>
 </html>
