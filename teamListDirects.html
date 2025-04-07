@@ -349,6 +349,94 @@
           <div class="pcoded-inner-content">
             <div class="main-body">
               <div class="page-wrapper">
+                <!-- [ Copy Modal ] start -->
+                <div
+                  id="copyModalCenter"
+                  class="modal fade"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="copyModalCenterTitle"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="modal-dialog modal-dialog-centered"
+                    role="document"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="copyModalCenterTitle">
+                          Info.
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <h4 class="text-center">
+                          <i class="feather icon-check-circle text-success"></i>
+                          <span>Link Copied Successfully</span>
+                        </h4>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-light"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-primary"
+                          data-bs-dismiss="modal"
+                        >
+                          Ok
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- [ Copy Modal ] end -->
+                <div
+                  id="exampleModalCenter"
+                  class="modal fade"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="exampleModalCenterTitle"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="modal-dialog modal-dialog-centered"
+                    role="document"
+                  >
+                    <div class="modal-content p-4">
+                      <div
+                        class="d-flex justify-content-center align-items-center flex-column"
+                      >
+                        <img
+                          src="assets/images/user/avatar-2.jpg"
+                          alt="User-Profile-Image"
+                          class="img-radius mb-3"
+                          style="width: 100px; height: 100px"
+                        />
+                        <h6>Ezz Ahmed</h6>
+                        <p>Sub Moderator</p>
+                        <button
+                          type="button"
+                          class="btn btn-primary w-100"
+                          data-bs-dismiss="modal"
+                          data-bs-target="#copyModalCenter"
+                          data-bs-toggle="modal"
+                        >
+                          Get Link
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div
                   class="d-flex justify-content-between align-items-center mb-3"
                 >
@@ -413,9 +501,17 @@
                               <td>Achiever</td>
                               <td>3000</td>
                               <td class="text-center">
-                                <button class="btn btn-primary rounded-3">
+                                <button class="btn btn-dark rounded-3">
                                   <i class="feather icon-phone"></i>
                                   Contact
+                                </button>
+                                <button
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#exampleModalCenter"
+                                  class="btn btn-primary rounded-3"
+                                >
+                                  <i class="feather icon-link"></i>
+                                  Get Link
                                 </button>
                               </td>
                             </tr>
@@ -425,9 +521,17 @@
                               <td>Achiever</td>
                               <td>3000</td>
                               <td class="text-center">
-                                <button class="btn btn-primary rounded-3">
+                                <button class="btn btn-dark rounded-3">
                                   <i class="feather icon-phone"></i>
                                   Contact
+                                </button>
+                                <button
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#exampleModalCenter"
+                                  class="btn btn-primary rounded-3"
+                                >
+                                  <i class="feather icon-link"></i>
+                                  Get Link
                                 </button>
                               </td>
                             </tr>
@@ -437,9 +541,17 @@
                               <td>Achiever</td>
                               <td>3000</td>
                               <td class="text-center">
-                                <button class="btn btn-primary rounded-3">
+                                <button class="btn btn-dark rounded-3">
                                   <i class="feather icon-phone"></i>
                                   Contact
+                                </button>
+                                <button
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#exampleModalCenter"
+                                  class="btn btn-primary rounded-3"
+                                >
+                                  <i class="feather icon-link"></i>
+                                  Get Link
                                 </button>
                               </td>
                             </tr>
@@ -449,9 +561,17 @@
                               <td>Achiever</td>
                               <td>3000</td>
                               <td class="text-center">
-                                <button class="btn btn-primary rounded-3">
+                                <button class="btn btn-dark rounded-3">
                                   <i class="feather icon-phone"></i>
                                   Contact
+                                </button>
+                                <button
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#exampleModalCenter"
+                                  class="btn btn-primary rounded-3"
+                                >
+                                  <i class="feather icon-link"></i>
+                                  Get Link
                                 </button>
                               </td>
                             </tr>
@@ -461,9 +581,17 @@
                               <td>Achiever</td>
                               <td>3000</td>
                               <td class="text-center">
-                                <button class="btn btn-primary rounded-3">
+                                <button class="btn btn-dark rounded-3">
                                   <i class="feather icon-phone"></i>
                                   Contact
+                                </button>
+                                <button
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#exampleModalCenter"
+                                  class="btn btn-primary rounded-3"
+                                >
+                                  <i class="feather icon-link"></i>
+                                  Get Link
                                 </button>
                               </td>
                             </tr>
@@ -473,9 +601,17 @@
                               <td>Achiever</td>
                               <td>3000</td>
                               <td class="text-center">
-                                <button class="btn btn-primary rounded-3">
+                                <button class="btn btn-dark rounded-3">
                                   <i class="feather icon-phone"></i>
                                   Contact
+                                </button>
+                                <button
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#exampleModalCenter"
+                                  class="btn btn-primary rounded-3"
+                                >
+                                  <i class="feather icon-link"></i>
+                                  Get Link
                                 </button>
                               </td>
                             </tr>
@@ -485,9 +621,17 @@
                               <td>Achiever</td>
                               <td>3000</td>
                               <td class="text-center">
-                                <button class="btn btn-primary rounded-3">
+                                <button class="btn btn-dark rounded-3">
                                   <i class="feather icon-phone"></i>
                                   Contact
+                                </button>
+                                <button
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#exampleModalCenter"
+                                  class="btn btn-primary rounded-3"
+                                >
+                                  <i class="feather icon-link"></i>
+                                  Get Link
                                 </button>
                               </td>
                             </tr>

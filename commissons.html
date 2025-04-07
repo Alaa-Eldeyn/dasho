@@ -11,8 +11,20 @@
   <link rel="stylesheet" href="assets/fonts/fontawesome/css/fontawesome-all.min.css" />
   <!-- animation css -->
   <link rel="stylesheet" href="assets/plugins/animation/css/animate.min.css" />
-  <!-- data tables css -->
-  <link rel="stylesheet" href="assets/plugins/data-tables/css/datatables.min.css" />
+<!-- data tables css -->
+<link
+rel="stylesheet"
+href="assets/plugins/data-tables/css/datatables.min.css"
+/>
+<!-- footable css -->
+<link
+rel="stylesheet"
+href="assets/plugins/footable/css/footable.bootstrap.min.css"
+/>
+<link
+rel="stylesheet"
+href="assets/plugins/footable/css/footable.standalone.min.css"
+/>
   <link rel="stylesheet" href="assets/fonts/material/css/materialdesignicons.min.css" />
   <!-- vendor css -->
   <link rel="stylesheet" href="assets/css/style.css" />
@@ -241,6 +253,58 @@
   </header>
   <!-- [ Header ] end -->
 
+                  <!-- [ Copy Modal ] start -->
+                  <div
+                  id="copyModalCenter"
+                  class="modal fade"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="copyModalCenterTitle"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="modal-dialog modal-dialog-centered"
+                    role="document"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="copyModalCenterTitle">
+                          Info.
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <h4 class="text-center">
+                          <i class="feather icon-check-circle text-success"></i>
+                          <span>Link Copied Successfully</span>
+                        </h4>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-light"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-primary"
+                          data-bs-dismiss="modal"
+                        >
+                          Ok
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- [ Copy Modal ] end -->
+
   <!-- [ Main Content ] start -->
   <div class="pcoded-main-container">
     <div class="pcoded-wrapper">
@@ -248,6 +312,15 @@
         <div class="pcoded-inner-content">
           <div class="main-body">
             <div class="page-wrapper">
+              <div class="d-flex gap-4 justify-content-start align-items-center mb-3">
+                <div class="fw-bold">Choose An Account: </div>
+                <select class="form-control " id="exampleFormControlSelect13" style="max-width: 300px;">
+                  <option selected hidden>Choose Account: </option>
+                  <option>Account 1</option>
+                  <option>Account 2</option>
+                  <option>Account 3</option>
+              </select>
+              </div>
               <div class="row">
                 <div class="col-sm-12">
                   <ul class="nav nav-tabs" id="pills-tab" role="tablist">
@@ -271,16 +344,16 @@
                       <a class="nav-link" id="pills-history-tab" data-bs-toggle="pill" href="#pills-history" role="tab"
                         aria-controls="pills-history" aria-selected="false">History Commission</a>
                     </li>
-
                   </ul>
                 </div>
                 <div class=" col-sm-12">
                   <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade " id="pills-binary" role="tabpanel"
+                    <div class="tab-pane fade show active" id="pills-binary" role="tabpanel"
                       aria-labelledby="v-pills-binary-tab">
                       <div class="card prod-p-card bg-c-green rounded-4">
                         <div class="card-body py-5">
-                          <div class="row align-items-center">
+                          <div class="row align-items-center" title="this is estimated binary commission , you can take it at the end of
+                          week ,it’s pending in your wallet now">
                             <div class="col">
                               <h6 class="m-b-0 text-white fs-3 fw-bold">
                                 Total Estimated Commissions:
@@ -355,7 +428,7 @@
                       </div>
                       <div class="card rounded-3">
                         <div class="card-header">
-                          <h4>Potential Clients:</h4>
+                          <h4>Binary commissions:</h4>
                         </div>
                         <div class="card-body">
                           <div class="dt-responsive table-responsive">
@@ -415,7 +488,6 @@
                                   <td class="fw-bold text-center fs-6">Remaining PVs:</td>
                                   <td>0 PV</td>
                                   <td>1000 PV</td>
-                                  <td></td>
                                 </tr>
                               </tfoot>
                               </tbody>
@@ -451,23 +523,23 @@
                             <div class="card-body">
                               <div class="mb-3">
                                 <label class="form-label">Number of Generated Links</label>
-                                <input type="number" class="form-control" placeholder="Number of Generated Links" />
+                                <input type="number" class="form-control" placeholder="Number of Generated Links" readonly/>
                               </div>
                               <div class="mb-3">
                                 <label class="form-label">Number of Actual Sales</label>
-                                <input type="number" class="form-control" placeholder="Number of Actual Sales" />
+                                <input type="number" class="form-control" placeholder="Number of Actual Sales" readonly/>
                               </div>
                               <div class="mb-3">
                                 <label class="form-label">Number of Potential Clients</label>
-                                <input type="number" class="form-control" placeholder="Number of Potential Clients" />
+                                <input type="number" class="form-control" placeholder="Number of Potential Clients" readonly/>
                               </div>
                               <div class="mb-3">
                                 <label class="form-label">Estimated Commissions</label>
-                                <input type="number" class="form-control" placeholder="Estimated Commissions" />
+                                <input type="number" class="form-control" placeholder="Estimated Commissions" readonly/>
                               </div>
                             </div>
                             <div class="card-footer">
-                              <button class="btn btn-primary w-100">
+                              <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#copyModalCenter">
                                 Generate Link
                               </button>
                             </div>
@@ -481,23 +553,23 @@
                             <div class="card-body">
                               <div class="mb-3">
                                 <label class="form-label">Number of Generated Links</label>
-                                <input type="number" class="form-control" placeholder="Number of Generated Links" />
+                                <input type="number" class="form-control" placeholder="Number of Generated Links" readonly/>
                               </div>
                               <div class="mb-3">
                                 <label class="form-label">Number of Actual Sales</label>
-                                <input type="number" class="form-control" placeholder="Number of Actual Sales" />
+                                <input type="number" class="form-control" placeholder="Number of Actual Sales" readonly/>
                               </div>
                               <div class="mb-3">
                                 <label class="form-label">Number of Potential Clients</label>
-                                <input type="number" class="form-control" placeholder="Number of Potential Clients" />
+                                <input type="number" class="form-control" placeholder="Number of Potential Clients" readonly/>
                               </div>
                               <div class="mb-3">
                                 <label class="form-label">Estimated Commissions</label>
-                                <input type="number" class="form-control" placeholder="Estimated Commissions" />
+                                <input type="number" class="form-control" placeholder="Estimated Commissions" readonly/>
                               </div>
                             </div>
                             <div class="card-footer">
-                              <button class="btn btn-primary w-100">
+                              <button class="btn btn-primary w-100"  data-bs-toggle="modal" data-bs-target="#copyModalCenter">
                                 Generate Link
                               </button>
                             </div>
@@ -508,56 +580,87 @@
                         <div class="card-header">
                           <h4>Potential Clients:</h4>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body"><div class="d-flex gap-4 mb-3">
+                          <input
+                            type="text"
+                            placeholder="Search for All Commissions"
+                            class="form-control"
+                          />
+                          <select
+                            class="form-control"
+                            id="exampleFormControlSelect1"
+                          >
+                            <option>All Types</option>
+                            <option>All Withdraws</option>
+                            <option>All Commissions</option>
+                          </select>
+                          <select
+                            class="form-control"
+                            id="exampleForm2ControlSelect1"
+                          >
+                            <option>All Status</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                          </select>
+                          <button type="button" class="btn btn-primary">
+                            Search
+                          </button>
+                        </div>
                           <div class="dt-responsive table-responsive">
-                            <table id="order-table" class="table table-striped table-bordered nowrap">
-                              <thead>
-                                <tr>
-                                  <th>Registration Date</th>
-                                  <th>Username</th>
-                                  <th>Phone Number</th>
-                                  <th>Type</th>
-                                  <th>Status</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>15/7/2003</td>
-                                  <td>Ali Shahin</td>
-                                  <td>01010385495</td>
-                                  <td>Software Engineer</td>
-                                  <td>Interested</td>
-                                </tr>
-                                <tr>
-                                  <td>15/7/2003</td>
-                                  <td>Ali Shahin</td>
-                                  <td>01010385495</td>
-                                  <td>Software Engineer</td>
-                                  <td>Interested</td>
-                                </tr>
-                                <tr>
-                                  <td>15/7/2003</td>
-                                  <td>Ali Shahin</td>
-                                  <td>01010385495</td>
-                                  <td>Software Engineer</td>
-                                  <td>Interested</td>
-                                </tr>
-                                <tr>
-                                  <td>15/7/2003</td>
-                                  <td>Ali Shahin</td>
-                                  <td>01010385495</td>
-                                  <td>Software Engineer</td>
-                                  <td>Interested</td>
-                                </tr>
-                                <tr>
-                                  <td>15/7/2003</td>
-                                  <td>Ali Shahin</td>
-                                  <td>01010385495</td>
-                                  <td>Software Engineer</td>
-                                  <td>Interested</td>
-                                </tr>
-                              </tbody>
-                            </table>
+                            <table
+                            id="demo-foo-filtering"
+                            class="table table-striped table-hover"
+                          >
+                          <thead class="border">
+                            <tr>
+                              <th>Registration Date</th>
+                              <th>Username</th>
+                              <th>Phone Number</th>
+                              <th>Type</th>
+                              <th>Status</th>
+                            </tr>
+                          </thead>
+    
+                          <tbody>
+                            <tr>
+                              <td>15/7/2003</td>
+                              <td>Ali Shahin</td>
+                              <td>01010385495</td>
+                              <td>Software Engineer</td>
+                              <td>Interested</td>
+                            </tr>
+                            <tr>
+                              <td>15/7/2003</td>
+                              <td>Ali Shahin</td>
+                              <td>01010385495</td>
+                              <td>Software Engineer</td>
+                              <td>Interested</td>
+                            </tr>
+                            <tr>
+                              <td>15/7/2003</td>
+                              <td>Ali Shahin</td>
+                              <td>01010385495</td>
+                              <td>Software Engineer</td>
+                              <td>Interested</td>
+                            </tr>
+                            <tr>
+                              <td>15/7/2003</td>
+                              <td>Ali Shahin</td>
+                              <td>01010385495</td>
+                              <td>Software Engineer</td>
+                              <td>Interested</td>
+                            </tr>
+                            <tr>
+                              <td>15/7/2003</td>
+                              <td>Ali Shahin</td>
+                              <td>01010385495</td>
+                              <td>Software Engineer</td>
+                              <td>Interested</td>
+                            </tr>
+                          </tbody>
+                          </table>
+
                           </div>
                         </div>
                       </div>
@@ -846,7 +949,7 @@
                                   class="col-2 d-flex align-items-center text-center"
                                 >
                                   <p class="fw-bold mb-0">
-                                    Level 001 <br />
+                                    Level 003 <br />
                                     <span class="text-success">2 Cheques * 3%</span>
                                   </p>
                                 </div>
@@ -860,13 +963,40 @@
                                 </div>
                               </div>
                             </div>
-                          </div> -->
+                          </div> 
                       </div>
                       <div class="card rounded-3">
                         <div class="card-header">
                           <h4>Level Commission Logs:</h4>
                         </div>
                         <div class="card-body">
+                          <div class="d-flex gap-4 mb-3">
+                            <input
+                              type="text"
+                              placeholder="Search for All Commissions "
+                              class="form-control"
+                            />
+                            <select
+                              class="form-control"
+                              id="exampleFormControlSelect1"
+                            >
+                            <option>All Commissions</option>
+                              <option>All Transactions</option>
+                              <option>All Withdraws</option>
+                            </select>
+                            <select
+                              class="form-control"
+                              id="exampleForm2ControlSelect1"
+                            >
+                              <option>All Status</option>
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                            </select>
+                            <button type="button" class="btn btn-primary">
+                              Search
+                            </button>
+                          </div>
                           <div class="dt-responsive table-responsive">
                             <table id="order-table" class="table table-striped table-bordered nowrap">
                               <thead>
@@ -953,7 +1083,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="tab-pane fade show active" id="pills-history" role="tabpanel" aria-labelledby="v-pills-history-tab">
+                    <div class="tab-pane fade" id="pills-history" role="tabpanel" aria-labelledby="v-pills-history-tab">
                       <div class="card prod-p-card bg-c-green rounded-4">
                         <div class="card-body py-5">
                           <div class="row align-items-center">
@@ -988,19 +1118,32 @@
                               <h4>Binary Commission</h4>
                               <h4>$3000</h4>
                             </div>
-                            <div class="card-body">
-                              <span class="px-3 d-block"><i class="fas fa-circle text-c-blue f-10 m-r-5"></i><strong
-                                  class="fw-bold">Collected Left PVs: </strong>5000 PVs</span>
-                              <hr />
-                              <span class="px-3 d-block"><i class="fas fa-circle text-c-blue f-10 m-r-5"></i><strong
-                                  class="fw-bold">Collected Left PVs: </strong>5000 PVs</span>
-                              <hr />
-                              <span class="px-3 d-block"><i class="fas fa-circle text-c-blue f-10 m-r-5"></i><strong
-                                  class="fw-bold">Collected Left PVs: </strong>5000 PVs</span>
-                              <hr />
-                              <span class="px-3 d-block"><i class="fas fa-circle text-c-blue f-10 m-r-5"></i><strong
-                                  class="fw-bold">Collected Left PVs: </strong>5000 PVs</span>
-                              <hr />
+                            <div class="card-body mb-0">
+                              <div
+                                  class="text-center mb-0 rounded-3 d-flex justify-content-center align-items-center flex-row"
+                                  style="font-size: 10px;">
+                                  <div class="col-6">
+                                    <div>
+                                      <p class="text-nowrap mb-0">Collected Left PVs:</p>
+                                      <p class="fw-bold fs-4">5000 PVs</p>
+                                    </div>
+                                    <div>
+                                      <p class="text-nowrap mb-0">Remaining Left PVs</p>
+                                      <p class="fw-bold fs-4">0 PVs</p>
+                                    </div>
+                                  </div>
+                                  <div class="border mx-auto" style="height:150px; width: 1px"></div>
+                                  <div class="col-6">
+                                    <div>
+                                      <p class="text-nowrap mb-0">Collected Right PVs:</p>
+                                      <p class="fw-bold fs-4">10000 PVs</p>
+                                    </div>
+                                    <div>
+                                      <p class="text-nowrap mb-0">Remaining Right PVs</p>
+                                      <p class="fw-bold fs-4">5000 PVs</p>
+                                    </div>
+                                  </div>
+                                </div>
                             </div>
                           </div>
                         </div>
@@ -1012,17 +1155,13 @@
                             </div>
                             <div class="card-body">
                               <span class="px-3 d-block"><i class="fas fa-circle text-c-blue f-10 m-r-5"></i><strong
-                                  class="fw-bold">Collected Left PVs: </strong>5000 PVs</span>
+                                  class="fw-bold">No of generated Links: </strong>15</span>
                               <hr />
                               <span class="px-3 d-block"><i class="fas fa-circle text-c-blue f-10 m-r-5"></i><strong
-                                  class="fw-bold">Collected Left PVs: </strong>5000 PVs</span>
+                                  class="fw-bold">No of Actual Sales: </strong>10</span>
                               <hr />
                               <span class="px-3 d-block"><i class="fas fa-circle text-c-blue f-10 m-r-5"></i><strong
-                                  class="fw-bold">Collected Left PVs: </strong>5000 PVs</span>
-                              <hr />
-                              <span class="px-3 d-block"><i class="fas fa-circle text-c-blue f-10 m-r-5"></i><strong
-                                  class="fw-bold">Collected Left PVs: </strong>5000 PVs</span>
-                              <hr />
+                                  class="fw-bold">No of Potential Clients: </strong>5</span>
                             </div>
                           </div>
                         </div>
@@ -1045,17 +1184,13 @@
                             </div>
                             <div class="card-body">
                               <span class="px-3 d-block"><i class="fas fa-circle text-c-blue f-10 m-r-5"></i><strong
-                                  class="fw-bold">Collected Left PVs: </strong>5000 PVs</span>
+                                  class="fw-bold">Total Cheques: </strong>20,000 $</span>
                               <hr />
                               <span class="px-3 d-block"><i class="fas fa-circle text-c-blue f-10 m-r-5"></i><strong
-                                  class="fw-bold">Collected Left PVs: </strong>5000 PVs</span>
+                                  class="fw-bold">No of Marketers get cheques: </strong>10</span>
                               <hr />
                               <span class="px-3 d-block"><i class="fas fa-circle text-c-blue f-10 m-r-5"></i><strong
-                                  class="fw-bold">Collected Left PVs: </strong>5000 PVs</span>
-                              <hr />
-                              <span class="px-3 d-block"><i class="fas fa-circle text-c-blue f-10 m-r-5"></i><strong
-                                  class="fw-bold">Collected Left PVs: </strong>5000 PVs</span>
-                              <hr />
+                                  class="fw-bold">No of Cheques: </strong>20</span>
                             </div>
                           </div>
                         </div>
@@ -1065,6 +1200,33 @@
                           <h4>Commission Logs:</h4>
                         </div>
                         <div class="card-body">
+                          <div class="d-flex gap-4 mb-3">
+                            <input
+                              type="text"
+                              placeholder="Search for All Commissions"
+                              class="form-control"
+                            />
+                            <select
+                              class="form-control"
+                              id="exampleFormControlSelect1"
+                            >
+                              <option>All Commissions</option>
+                              <option>All Withdraws</option>
+                              <option>All Commissions</option>
+                            </select>
+                            <select
+                              class="form-control"
+                              id="exampleForm2ControlSelect1"
+                            >
+                              <option>All Status</option>
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                            </select>
+                            <button type="button" class="btn btn-primary">
+                              Search
+                            </button>
+                          </div>
                           <div class="dt-responsive table-responsive">
                             <table id="order-table" class="table table-striped table-bordered nowrap">
                               <thead>
@@ -1171,6 +1333,22 @@
 <script src="assets/plugins/chart-chartjs/js/Chart.min.js"></script>
 <script src="assets/js/pages/chart-chart-custom.js"></script>
 
+    <!-- footable Js -->
+    <script src="assets/plugins/footable/js/footable.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        // [ Foo-table ]
+        $("#demo-foo-filtering").footable({
+          paging: {
+            enabled: true,
+          },
+          sorting: {
+            enabled: true,
+          },
+        });
+      });
+    </script>
 </body>
 
 </html>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Information</title>
+    <title>Account Details</title>
     <!-- Favicon icon -->
     <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon" />
     <!-- fontawesome icon -->
@@ -23,6 +23,49 @@
     />
     <!-- vendor css -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      .tree {
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .person {
+        width: 50px;
+        height: 50px;
+        background-color: green;
+        border-radius: 50%;
+        margin: 0 auto;
+      }
+
+      .person.gray {
+        background-color: gray;
+      }
+
+      .line {
+        width: 2px;
+        height: 20px;
+        background-color: black;
+        margin: 0 auto;
+      }
+
+      .horizontal-line {
+        height: 2px;
+        background-color: black;
+        position: relative;
+        top: -10px;
+      }
+
+      .subtree {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        gap: 50px;
+      }
+
+      .subtree .line {
+        height: 20px;
+      }
+    </style>
   </head>
   <body>
     <!-- [ navigation menu ] start -->
@@ -469,8 +512,8 @@
                               </div>
                             </div>
                           </div>
-                          <div class="row mb-3">
-                            <div class="col-md-6 mb-3">
+                          <div class="row">
+                            <div class="col-md-6">
                               <div class="card h-100">
                                 <div class="card-header">
                                   <h5>Activities</h5>
@@ -500,7 +543,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-md-6 mb-3">
+                            <div class="col-md-6">
                               <div class="card h-100">
                                 <div class="card-header">
                                   <h5>Contact Info.</h5>
@@ -533,39 +576,18 @@
                           </div>
                         </div>
                         <div class="col-md-4">
-                          <div class="card">
-                            <div class="widget-profile-card-3">
-                              <img
-                                class="img-fluid img-thumbnail"
-                                src="assets/images/widget/img-round1.jpg"
-                                alt="Profile-user"
-                              />
-                            </div>
-                            <div class="card-body text-center">
-                              <h3>Sara Soudein</h3>
-                              <p>Web Designer</p>
-                              <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Adipisci a, rem accusantium
-                                recusandae beatae.
-                              </p>
-                            </div>
-
-                            <div class="card-footer bg-inverse">
-                              <div class="row text-center">
-                                <div class="col">
-                                  <h4>400</h4>
-                                  <span>Designs</span>
-                                </div>
-                                <div class="col">
-                                  <h4>90</h4>
-                                  <span>Projects</span>
-                                </div>
-                                <div class="col">
-                                  <h4>70</h4>
-                                  <span>Devlopment</span>
-                                </div>
+                          <div class="card h-100">
+                            <div
+                              class="card-body d-flex justify-content-center flex-column text-center"
+                            >
+                              <div class="p-3 pt-0 widget-profile-card-3">
+                                <img
+                                  class="img-fluid img-thumbnail"
+                                  src="assets/images/widget/img-round1.jpg"
+                                  alt="Profile-user"
+                                />
                               </div>
+                              <h3>Sara Soudein</h3>
                             </div>
                           </div>
                         </div>
@@ -583,11 +605,14 @@
                             Start your journey! Recruit your First Member to
                             drive progress forward.
                           </p>
-                          <div class="progress mb-4 rounded-pill " style="height: 25px;">
+                          <div
+                            class="progress mb-4 rounded-pill"
+                            style="height: 25px"
+                          >
                             <div
                               class="progress-bar progress-primary rounded-pill"
                               role="progressbar"
-                              style="width: 10%;"
+                              style="width: 10%"
                               aria-valuenow="10"
                               aria-valuemin="0"
                               aria-valuemax="100"
@@ -604,58 +629,213 @@
                     </div>
                     <div class="tab-pane fade" id="accountType" role="tabpanel">
                       <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                           <div class="card">
-                            <h3 class="fw-bold text-center card-header p-3">You have Starter Account</h3>
-                            <div class="card-body">
+                            <h3 class="fw-bold text-center card-header p-3">
+                              You have Starter Account
+                            </h3>
+                            <div class="card-body d-flex gap-3 justify-content-between">
                               <ul>
-                                <li class="mb-3 fs-6 fw-bold">Commission Rate: 5% on direct sales</li>
-                                <li class="mb-3 fs-6 fw-bold">Supported Levels: 1 level</li>
                                 <li class="mb-3 fs-6 fw-bold">
-                                Benefits:
-                                <ul>
-                                  <li class="mb-3 fs-6 fw-normal mt-3">Basic marketing support</li>
-                                  <li class="mb-3 fs-6 fw-normal">Access to limited products</li>
-                                  <li class="mb-3 fs-6 fw-normal">No upgrade bonuses</li>
-                                </ul>
-                              </li>
-                              <li class="mt-3 mb-0 fs-6 fw-bold">To Upgrade your Account</li>
-                            </ul>
-                          </div>
-                               <div class="card-footer">
+                                  Commission Rate: 5% on direct sales
+                                </li>
+                                <li class="mb-3 fs-6 fw-bold">
+                                  Supported Levels: 1 level
+                                </li>
+                                <li class="mb-3 fs-6 fw-bold">
+                                  Benefits:
+                                  <ul>
+                                    <li class="mb-3 fs-6 fw-normal mt-3">
+                                      Basic marketing support
+                                    </li>
+                                    <li class="mb-3 fs-6 fw-normal">
+                                      Access to limited products
+                                    </li>
+                                    <li class="mb-3 fs-6 fw-normal">
+                                      No upgrade bonuses
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li class="mt-3 mb-0 fs-6 fw-bold">
+                                  To Upgrade your Account
+                                </li>
+                              </ul>
+                              <div
+                              class="d-flex justify-content-center align-items-center text-center flex-grow-1"
+                              style="max-width: 300px"
+                            >
+                            <!-- [ Tree Legs ] Start -->
+                              <div
+                                class="d-flex flex-column align-items-center"
+                              >
+                                <!-- الرأس -->
+                                <div
+                                  class="rounded-circle text-success overflow-hidden"
+                                  style="width: 80px; height: 80px"
+                                >
+                              <i class="fas fa-user rounded-pill" style="font-size: 80px;"></i>
+                              </div>
 
-                                 <a href="store.html" class="btn btn-secondary w-100">
-                                   Continue Buying
-                                  </a>
+                                <!-- الخط العمودي -->
+                                <div
+                                  class="bg-dark"
+                                  style="width: 2px; height: 60px"
+                                ></div>
+
+                                <!-- الخط الأفقي + الأفرع -->
+                                <div class="d-flex align-items-start">
+                                  <!-- الفرع الأيسر -->
+                                  <div
+                                    class="d-flex flex-column align-items-center"
+                                    style="transform: translateX(50%)"
+                                  >
+                                    <div
+                                      class="bg-dark"
+                                      style="width: 2px; height: 40px"
+                                    ></div>
+                                    <div
+                                      class="rounded-circle text-secondary overflow-hidden"
+                                      style="width: 80px; height: 80px"
+                                    ><i class="fas fa-user rounded-pill" style="font-size: 80px;"></i></div>
+                                  </div>
+
+                                  <!-- الخط الأفقي بين الفرعين -->
+                                  <div
+                                    class="bg-dark"
+                                    style="height: 2px; width: 200px"
+                                  ></div>
+
+                                  <!-- الفرع الأيمن -->
+                                  <div
+                                    class="d-flex flex-column align-items-center translate-middle-x"
+                                  >
+                                    <div
+                                      class="bg-dark"
+                                      style="width: 2px; height: 40px"
+                                    ></div>
+                                    <div
+                                      class="rounded-circle text-secondary overflow-hidden"
+                                      style="width: 80px; height: 80px"
+                                    ><i class="fas fa-user rounded-pill" style="font-size: 80px;"></i></div>
+                                  </div>
                                 </div>
+                              </div>
+                            <!-- [ Tree Legs ] End -->
+                            </div>
+                            </div>
+                            <div class="card-footer">
+                              <a
+                                href="store.html"
+                                class="btn btn-secondary w-100"
+                                style="max-width: 50%"
+                              >
+                                Continue Buying
+                              </a>
+                            </div>
                           </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                           <div class="card">
-                            <h3 class="fw-bold text-center card-header p-3">Next Silver Plan</h3>
-                            <div class="card-body">
+                            <h3 class="fw-bold text-center card-header p-3">
+                              Next Silver Plan
+                            </h3>
+                            <div class="card-body d-flex gap-3 justify-content-between">
                               <ul>
                                 <li class="mb-3 fs-6 fw-bold">
                                   Commission Rate: 8% on direct sales + 3% from
                                   level 2
                                 </li>
-                                <li class="mb-3 fs-6 fw-bold">Supported Levels: 2 levels</li>
+                                <li class="mb-3 fs-6 fw-bold">
+                                  Supported Levels: 2 levels
+                                </li>
                                 <li class="mb-3 fs-6 fw-bold">
                                   Benefits:
                                   <ul>
-                                    <li class="mb-3 fs-6 fw-normal mt-3">Advanced marketing tools</li>
+                                    <li class="mb-3 fs-6 fw-normal mt-3">
+                                      Advanced marketing tools
+                                    </li>
                                     <li class="mb-3 fs-6 fw-normal">
                                       $50 upgrade bonus after reaching $1,000 in
                                       sales
                                     </li>
-                                    <li class="mb-3 fs-6 fw-normal">Faster customer support</li>
+                                    <li class="mb-3 fs-6 fw-normal">
+                                      Faster customer support
+                                    </li>
                                   </ul>
                                 </li>
-                                <li class="mt-3 mb-0 fs-6 fw-bold">Collect 2000 PVs to</li>
+                                <li class="mt-3 mb-0 fs-6 fw-bold">
+                                  Collect 2000 PVs to
+                                </li>
                               </ul>
+                              <div
+                                class="d-flex justify-content-center align-items-center text-center flex-grow-1"
+                                style="max-width: 300px"
+                              >
+                              <!-- [ Tree Legs ] Start -->
+                              <div
+                              class="d-flex flex-column align-items-center"
+                            >
+                              <!-- الرأس -->
+                              <div
+                                class="rounded-circle text-success overflow-hidden"
+                                style="width: 80px; height: 80px"
+                              >
+                            <i class="fas fa-user rounded-pill" style="font-size: 80px;"></i>
+                            </div>
+
+                              <!-- الخط العمودي -->
+                              <div
+                                class="bg-dark"
+                                style="width: 2px; height: 60px"
+                              ></div>
+
+                              <!-- الخط الأفقي + الأفرع -->
+                              <div class="d-flex align-items-start">
+                                <!-- الفرع الأيسر -->
+                                <div
+                                  class="d-flex flex-column align-items-center"
+                                  style="transform: translateX(50%)"
+                                >
+                                  <div
+                                    class="bg-dark"
+                                    style="width: 2px; height: 40px"
+                                  ></div>
+                                  <div
+                                    class="rounded-circle text-success overflow-hidden"
+                                    style="width: 80px; height: 80px"
+                                  ><i class="fas fa-user rounded-pill" style="font-size: 80px;"></i></div>
+                                </div>
+
+                                <!-- الخط الأفقي بين الفرعين -->
+                                <div
+                                  class="bg-dark"
+                                  style="height: 2px; width: 200px"
+                                ></div>
+
+                                <!-- الفرع الأيمن -->
+                                <div
+                                  class="d-flex flex-column align-items-center translate-middle-x"
+                                >
+                                  <div
+                                    class="bg-dark"
+                                    style="width: 2px; height: 40px"
+                                  ></div>
+                                  <div
+                                    class="rounded-circle text-secondary overflow-hidden"
+                                    style="width: 80px; height: 80px"
+                                  ><i class="fas fa-user rounded-pill" style="font-size: 80px;"></i></div>
+                                </div>
+                              </div>
+                            </div>
+                              <!-- [ Tree Legs ] End -->
+                              </div>
                             </div>
                             <div class="card-footer">
-                              <a href="store.html" class="btn btn-primary w-100">
+                              <a
+                                href="store.html"
+                                class="btn btn-primary w-100"
+                                style="max-width: 50%"
+                              >
                                 Get this Plan
                               </a>
                             </div>
@@ -665,106 +845,73 @@
                     </div>
                     <div class="tab-pane fade" id="sponsor" role="tabpanel">
                       <div class="row">
-                        <div class="col-md-4">
+                        <div style="max-width: 600px">
                           <div class="row">
-                            <!-- <div class="mb-3">
-                              <div class="card h-100">
-                                <div class="card-header">
-                                  <h5>Personal Info</h5>
-                                </div>
-                                <div class="card-body p-0">
-                                  <div class="my-3">
-                                    <span class="px-3 d-block"
-                                      ><i
-                                        class="fas fa-circle text-c-blue f-10 m-r-5"
-                                      ></i
-                                      ><strong class="fw-bold"
-                                        >Joined Date:
-                                      </strong>
-                                      1/1/2020</span
-                                    >
-                                    <hr />
-                                    <span class="px-3 d-block"
-                                      ><i
-                                        class="fas fa-circle text-c-green f-10 m-r-5"
-                                      ></i
-                                      ><strong class="fw-bold"
-                                        >Account Type: </strong
-                                      >Gold</span
-                                    >
-                                  </div>
-                                </div>
+                            <div
+                              class="d-flex justify-content-center flex-column gap-4"
+                            >
+                              <div
+                                class="d-flex justify-content-center flex-column"
+                              >
+                                <img
+                                  style="max-width: 100px"
+                                  class="img-fluid rounded-pill img-thumbnail mx-auto"
+                                  src="assets/images/user/avatar-2.jpg"
+                                  alt="Profile-user"
+                                />
+                                <h4 class="m-0 mt-3 fw-bold text-center">
+                                  Mostafa Ahmed
+                                </h4>
                               </div>
-                            </div> -->
-                            <div class="mb-3">
-                              <div class="card h-100">
-                                <div class="card-header">
-                                  <h5>Contact Info.</h5>
-                                </div>
-                                <div class="card-body p-0">
-                                  <div class="my-3">
-                                    <span class="px-3 d-block">
-                                      <i
-                                        class="fas fa-circle text-c-blue f-10 m-r-5"
-                                      ></i
-                                      ><strong class="fw-bold"
-                                        >Email Address:
-                                      </strong>
-                                      Mostafa_Ahmed@example.com
-                                    </span>
-                                    <hr />
-                                    <span class="px-3 d-block">
-                                      <i
-                                        class="fas fa-circle text-c-green f-10 m-r-5"
-                                      ></i
-                                      ><strong class="fw-bold"
-                                        >Phone Number:
-                                      </strong>
-                                      01012345678
-                                    </span>
+                              <div class="">
+                                <div class="card h-100 rounded-3">
+                                  <div class="card-header">
+                                    <h5>Contact Info:</h5>
+                                  </div>
+                                  <div class="card-body p-0">
+                                    <div class="my-3">
+                                      <span class="px-3 d-block">
+                                        <i
+                                          class="fas fa-circle text-c-blue f-10 m-r-5"
+                                        ></i
+                                        ><strong class="fw-bold"
+                                          >Email Address:
+                                        </strong>
+                                        Mostafa_Ahmed@example.com
+                                      </span>
+                                      <hr />
+                                      <span class="px-3 d-block">
+                                        <i
+                                          class="fas fa-circle text-c-green f-10 m-r-5"
+                                        ></i
+                                        ><strong class="fw-bold"
+                                          >Phone Number:
+                                        </strong>
+                                        01012345678
+                                      </span>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <!-- <div class="col-md-4">
-                          <div class="card">
-                            <div class="widget-profile-card-3">
-                              <img
-                                class="img-fluid img-thumbnail"
-                                src="assets/images/widget/img-round1.jpg"
-                                alt="Profile-user"
-                              />
-                            </div>
-                            <div class="card-body text-center">
-                              <h3>Sara Soudein</h3>
-                              <p>Web Designer</p>
-                              <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Adipisci a, rem accusantium
-                                recusandae beatae.
-                              </p>
-                            </div>
-
-                            <div class="card-footer bg-inverse">
-                              <div class="row text-center">
-                                <div class="col">
-                                  <h4>400</h4>
-                                  <span>Designs</span>
-                                </div>
-                                <div class="col">
-                                  <h4>90</h4>
-                                  <span>Projects</span>
-                                </div>
-                                <div class="col">
-                                  <h4>70</h4>
-                                  <span>Devlopment</span>
-                                </div>
+                        <div class="col-md-4">
+                          <div class="card h-100">
+                            <div
+                              class="card-body d-flex justify-content-center flex-column text-center"
+                            >
+                              <div class="p-3 pt-0 widget-profile-card-3">
+                                <img
+                                  class="img-fluid img-thumbnail"
+                                  src="assets/images/widget/img-round1.jpg"
+                                  alt="Profile-user"
+                                />
                               </div>
+                              <h3>Sara Soudein</h3>
                             </div>
                           </div>
-                        </div> -->
+                        </div>
                       </div>
                     </div>
                   </div>

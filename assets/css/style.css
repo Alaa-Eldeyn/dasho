@@ -101,6 +101,10 @@ body {
   appearance: auto;
 }
 
+.wallet-tfoot td{
+  border: 1px solid rgb(209, 209, 209);
+}
+
 .border-bottom-primary td {
   border-bottom: 1px solid #19bcbf !important;
 }
