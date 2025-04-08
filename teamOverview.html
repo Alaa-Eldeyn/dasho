@@ -21,10 +21,13 @@
       rel="stylesheet"
       href="assets/fonts/material/css/materialdesignicons.min.css"
     />
-    <!-- jstree css -->
-    <link rel="stylesheet" href="assets/plugins/jstree/css/style.min.css" />
     <!-- vendor css -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="assets/plugins/treant-js-master/Treant.css"
+      type="text/css"
+    />
     <style>
       #html li {
         padding-top: 10px;
@@ -33,6 +36,42 @@
       #html li span {
         font-weight: bold;
         font-size: 20px;
+      }
+      .chart {
+        max-height: 900px;
+        margin: 5px;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .node img {
+        margin-top: 5px;
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        float: none !important;
+        cursor: pointer;
+      }
+      .node > .node-name {
+        font-weight: bold;
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 0;
+      }
+
+      .Treant .collapse-switch {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+      .Treant .node.collapsed {
+        border: 2px solid black;
+      }
+      .Treant .node.collapsed .collapse-switch {
+        background: none;
       }
     </style>
   </head>
@@ -228,7 +267,7 @@
                     <div class="d-flex">
                       <img
                         class="img-radius"
-                        src="assets/images/user/avatar-3.jpg"
+                        src="assets/images/user/user-dis.png"
                         alt="Generic placeholder image"
                       />
                       <div class="flex-grow-1">
@@ -266,7 +305,7 @@
                     <div class="d-flex">
                       <img
                         class="img-radius"
-                        src="assets/images/user/avatar-3.jpg"
+                        src="assets/images/user/user-dis.png"
                         alt="Generic placeholder image"
                       />
                       <div class="flex-grow-1">
@@ -377,7 +416,7 @@
                     <select
                       class="form-control"
                       id="page2Select"
-                      onchange="navigatePage()"
+                      onchange="navigate2Page()"
                     >
                       <option value="#!" hidden selected>Filters</option>
                       <option value="teamList.html">Network</option>
@@ -446,6 +485,60 @@
                 </div>
                 <!-- [ Copy Modal ] end -->
                 <div
+                  id="emptyModalCenter"
+                  class="modal fade"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="emptyModalCenterTitle"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="modal-dialog modal-dialog-centered"
+                    role="document"
+                  >
+                    <div class="modal-content p-4">
+                      <div
+                        class="d-flex justify-content-center align-items-center flex-column"
+                      >
+                        <img
+                          src="assets/images/user/avatar-2.jpg"
+                          alt="User-Profile-Image"
+                          class="img-radius mb-3"
+                          style="width: 100px; height: 100px"
+                        />
+                        <h6>Ezz Ahmed</h6>
+                        <p>Sub Moderator</p>
+                        <div class="d-flex w-100">
+                          <div class=" d-flex align-items-center gap-2 flex-grow-1">
+                            <div class="fw-bold">Left:</div>
+                            <button
+                              type="button"
+                              class="btn btn-primary w-100"
+                              data-bs-dismiss="modal"
+                              data-bs-target="#copyModalCenter"
+                              data-bs-toggle="modal"
+                            >
+                              Get Link
+                            </button>
+                          </div>
+                          <div class="ms-2 d-flex align-items-center gap-2 flex-grow-1">
+                            <div class="fw-bold">Right:</div>
+                            <button
+                              type="button"
+                              class="btn btn-primary w-100"
+                              data-bs-dismiss="modal"
+                              data-bs-target="#copyModalCenter"
+                              data-bs-toggle="modal"
+                            >
+                              Get Link
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
                   id="exampleModalCenter"
                   class="modal fade"
                   tabindex="-1"
@@ -469,15 +562,32 @@
                         />
                         <h6>Ezz Ahmed</h6>
                         <p>Sub Moderator</p>
-                        <button
-                          type="button"
-                          class="btn btn-primary w-100"
-                          data-bs-dismiss="modal"
-                          data-bs-target="#copyModalCenter"
-                          data-bs-toggle="modal"
-                        >
-                          Get Link
-                        </button>
+                        <div class="d-flex w-100">
+                          <div class=" d-flex align-items-center gap-2 flex-grow-1">
+                            <div class="fw-bold">Left:</div>
+                            <button
+                              type="button"
+                              class="btn btn-primary w-100"
+                              data-bs-dismiss="modal"
+                              data-bs-target="#copyModalCenter"
+                              data-bs-toggle="modal"
+                            >
+                              Get Link
+                            </button>
+                          </div>
+                          <div class="ms-2 d-flex align-items-center gap-2 flex-grow-1">
+                            <div class="fw-bold">Right:</div>
+                            <button
+                              type="button"
+                              class="btn btn-primary w-100"
+                              data-bs-dismiss="modal"
+                              data-bs-target="#copyModalCenter"
+                              data-bs-toggle="modal"
+                            >
+                              Get Link
+                            </button>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -535,105 +645,14 @@
                     </div>
                   </div>
                 </div>
-                <div id="html" class="demo mt-4 bg-white p-4 rounded-3">
-                  <ul>
-                    <li data-jstree='{ "opened" : true }'>
-                      <span data-bs-toggle="modal" data-bs-target="#Moderator"
-                        >Ahmed Mohamed</span
-                      >
-                      <ul>
-                        <li data-jstree='{ "opened" : true }'>
-                          <span
-                            data-bs-toggle="modal"
-                            data-bs-target="#exampleModalCenter"
-                          >
-                            Ezz Ahmed
-                          </span>
-                          <ul>
-                            <li data-jstree='{ "opened" : true }'>
-                              <span
-                                data-bs-toggle="modal"
-                                data-bs-target="#exampleModalCenter"
-                              >
-                                Ezz Child 1
-                              </span>
-                              <ul>
-                                <li>
-                                  <span
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#exampleModalCenter"
-                                  >
-                                    Ezz Child Child 1
-                                  </span>
-                                </li>
-                                <li>
-                                  <span
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#exampleModalCenter"
-                                  >
-                                    Ezz Child Child 2
-                                  </span>
-                                </li>
-                                <li>
-                                  <span
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#exampleModalCenter"
-                                  >
-                                    Ezz Child Child 3
-                                  </span>
-                                </li>
-                                <li>
-                                  <span
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#exampleModalCenter"
-                                  >
-                                    Ezz Child Child 4
-                                  </span>
-                                </li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li>
-                        <li data-jstree='{ "opened" : true }'>
-                          <span
-                            data-bs-toggle="modal"
-                            data-bs-target="#exampleModalCenter"
-                          >
-                            Zein Mahmoud
-                          </span>
-                          <ul>
-                            <li data-jstree='{ "opened" : true }'>
-                              <span
-                                data-bs-toggle="modal"
-                                data-bs-target="#exampleModalCenter"
-                              >
-                                Zein Child 1
-                              </span>
-                              <ul>
-                                <li>
-                                  <span
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#exampleModalCenter"
-                                  >
-                                    Zein Child Child 1
-                                  </span>
-                                </li>
-                                <li>
-                                  <span
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#exampleModalCenter"
-                                  >
-                                    Zein Child Child 2
-                                  </span>
-                                </li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
+                <div style="width: fit-content;">
+                  <input
+                  type="text"
+                  placeholder="Search By username"
+                  class="form-control"
+                  />
                 </div>
+                <div id="collapsable-tree" class="chart"></div>
               </div>
             </div>
           </div>
@@ -655,12 +674,17 @@
     <script src="assets/plugins/bootstrap/js/popper.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/pcoded.min.js"></script>
-    <!-- jstree Js -->
-    <script src="assets/plugins/jstree/js/jstree.min.js"></script>
-    <script src="assets/js/pages/ac-treeview.js"></script>
+
     <script>
       function navigatePage() {
         var select = document.getElementById("pageSelect");
+        var selectedValue = select.value;
+        if (selectedValue) {
+          window.location.href = selectedValue;
+        }
+      }
+      function navigate2Page() {
+        var select = document.getElementById("page2Select");
         var selectedValue = select.value;
         if (selectedValue) {
           window.location.href = selectedValue;
@@ -673,6 +697,115 @@
         modal.find(".modal-title").text("New message to " + recipient);
         modal.find(".modal-body input").val(recipient);
       });
+    </script>
+    <script src="assets/plugins/treant-js-master/vendor/raphael.js"></script>
+    <script src="assets/plugins/treant-js-master/Treant.js"></script>
+
+    <script>
+      var chart_config = {
+        chart: {
+          container: "#collapsable-tree",
+          connectors: {
+            type: "step",
+            style: {
+              stroke: "#808080",
+              "stroke-width": 2,
+              "arrow-end": "classic-wide-long",
+            },
+          },
+        },
+        nodeStructure: {
+          text: { name: "Moderator" },
+          image: "assets/images/user/user-active.png",
+          children: [
+            {
+              image: "assets/images/user/user-dis.png",
+              pseudo: true,
+              children: [
+                {
+                  text: { name: "Empty" },
+                  image: "assets/images/user/user-dis.png",
+                },
+                {
+                  text: { name: "Alaa Eldeyn2" },
+                  image: "assets/images/user/user-active.png",
+                  children: [
+                    {
+                      text: { name: "Alaa Eldeyn2-1" },
+                      image: "assets/images/user/user-active.png",
+                      children: [
+                        {
+                          text: { name: "Alaa Eldeyn2-2-1" },
+                          image: "assets/images/user/user-active.png",
+                        },
+                        {
+                          text: { name: "Alaa Eldeyn2-2-2" },
+                          image: "assets/images/user/user-active.png",
+                        },
+                      ],
+                    },
+                    {
+                      text: { name: "Empty" },
+                      image: "assets/images/user/user-dis.png",
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              pseudo: true,
+              children: [
+                {
+                  text: { name: "Alaa Eldeyn1" },
+                  image: "assets/images/user/user-active.png",
+                  children: [
+                    {
+                      text: { name: "Empty" },
+                      image: "assets/images/user/user-dis.png",
+                    },
+                    {
+                      text: { name: "Alaa Eldeyn1-2" },
+                      image: "assets/images/user/user-active.png",
+                      children: [
+                        {
+                          text: { name: "Alaa Eldeyn1-2-1" },
+                          image: "assets/images/user/user-active.png",
+                        },
+                        {
+                          text: { name: "Alaa Eldeyn1-2-2" },
+                          image: "assets/images/user/user-active.png",
+                        },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  text: { name: "Empty" },
+                  image: "assets/images/user/user-dis.png",
+                },
+              ],
+            },
+          ],
+        },
+      };
+      var my_chart = new Treant(chart_config);
+      var treeNodes = document.querySelectorAll('.node');  // All nodes in the tree
+      treeNodes.forEach(function(node) {
+        node.addEventListener('click', function(event) {
+          var nodeName = event.target.closest('.node').querySelector('.node-name').innerText;
+
+          // If the clicked node is a "moderator", show moderator modal
+          if (nodeName.toLowerCase() === "moderator") {
+            $('#Moderator').modal('show');  // Show moderator modal
+          } else if (nodeName.toLowerCase() === "empty") {
+            $('#emptyModalCenter').modal('show'); // عرض المودال
+          } else {
+            $('#exampleModalCenter').modal('show');  // Show generic node modal
+          }
+          
+        });
+      });
+      
     </script>
   </body>
 </html>
