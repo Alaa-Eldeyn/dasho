@@ -76,6 +76,13 @@
     </style>
   </head>
   <body>
+	<!-- [ Pre-loader ] start -->
+	<div class="loader-bg">
+		<div class="loader-track">
+			<div class="loader-fill"></div>
+		</div>
+	</div>
+	<!-- [ Pre-loader ] End -->
     <!-- [ navigation menu ] start -->
     <nav class="pcoded-navbar menupos-fixed">
       <div class="navbar-wrapper">
@@ -721,10 +728,6 @@
               pseudo: true,
               children: [
                 {
-                  text: { name: "Empty" },
-                  image: "assets/images/user/user-dis.png",
-                },
-                {
                   text: { name: "Alaa Eldeyn2" },
                   image: "assets/images/user/user-active.png",
                   children: [
@@ -777,10 +780,7 @@
                     },
                   ],
                 },
-                {
-                  text: { name: "Empty" },
-                  image: "assets/images/user/user-dis.png",
-                },
+                
               ],
             },
           ],
@@ -796,7 +796,7 @@
           if (nodeName.toLowerCase() === "moderator") {
             $('#Moderator').modal('show');  // Show moderator modal
           } else if (nodeName.toLowerCase() === "empty") {
-            $('#emptyModalCenter').modal('show'); // عرض المودال
+            // $('#emptyModalCenter').modal('show'); // عرض المودال
           } else {
             $('#exampleModalCenter').modal('show');  // Show generic node modal
           }

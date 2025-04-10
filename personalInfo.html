@@ -20,6 +20,13 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+	<!-- [ Pre-loader ] start -->
+	<div class="loader-bg">
+		<div class="loader-track">
+			<div class="loader-fill"></div>
+		</div>
+	</div>
+	<!-- [ Pre-loader ] End -->
     <!-- [ navigation menu ] start -->
     <nav class="pcoded-navbar menupos-fixed">
       <div class="navbar-wrapper">
@@ -345,7 +352,7 @@
         <div class="main-body">
           <div class="page-wrapper">
             <div class="bg-white p-4 pb-0">
-              <div class="card p-4 mb-0 mx-auto rounded-3" style="max-width: 700px; background: #f8f8f8;">
+              <div class=" position-relative card p-4 mb-0 mx-auto rounded-3" style="max-width: 700px; background: #f8f8f8;">
                 <div class="d-flex align-items-center justify-content-center">
                   <img
                     class="img-radius"
@@ -356,9 +363,11 @@
                   <div class="flex-grow-1 pt-3 ms-3">
                     <h3>Sara Soudein</h3>
                     <p>Current Role</p>
+                    <button class="position-absolute top-0 end-0 m-3 border-0 bg-transparent">
+                      <i class="feather icon-edit m-0"></i>
+                      Edit Profile</button>
+                      </div>
                   </div>
-                  <!-- تم حذف أيقونة Edit -->
-                </div>
               </div>
             </div>
 
