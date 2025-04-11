@@ -379,56 +379,84 @@
                 <div class="row">
                   <div class="mb-3 col-md-6">
                     <label class="form-label" for="firstName">First Name</label>
-                    <input type="text" class="form-control" id="firstName" value="Sara" readonly />
+                    <input type="text" class="form-control" id="firstName" value="Sara" readonly disabled />
                   </div>
                   <div class="mb-3 col-md-6">
                     <label class="form-label" for="lastName">Last Name</label>
-                    <input type="text" class="form-control" id="lastName" value="Soudein" readonly />
+                    <input type="text" class="form-control" id="lastName" value="Soudein" readonly disabled />
                   </div>
                 </div>
 
                 <div class="row">
                   <div class="mb-3 col-md-6">
                     <label class="form-label" for="email">Email</label>
-                    <input type="email" class="form-control" id="email" value="sara@example.com" readonly />
+                    <input type="email" class="form-control" id="email" value="sara@example.com" readonly disabled />
                   </div>
                   <div class="mb-3 col-md-6">
                     <label class="form-label" for="phoneNumber">Phone number</label>
-                    <input type="text" class="form-control" id="phoneNumber" value="+20132165498" readonly />
+                    <input type="text" class="form-control" id="phoneNumber" value="+20132165498" readonly disabled />
                   </div>
                 </div>
 
                 <!-- Editable Field -->
                 <div class="mb-3">
                   <label class="form-label" for="address">Address</label>
-                  <input type="text" class="form-control" id="address" placeholder="1234 Main St" />
+                  <input type="text" class="form-control" id="address" placeholder="Please enter your Address" />
                 </div>
 
                 <!-- New Field -->
                 <div class="mb-3">
-                  <label class="form-label" for="secondPhone">Second Phone Number</label>
-                  <input type="text" class="form-control" id="secondPhone" placeholder="+201001234567" />
+                   <label class="form-label">Phone Number</label>
+                      <div class="input-group">
+                        <select class="btn bg-primary text-black" style="" aria-label="Select country code">
+  <option selected>+20</option>
+  <option value="+966">+966</option>
+  <option value="+971">+971</option>
+  <option value="+965">+965</option>
+  <option value="+974">+974</option>
+  <option value="+962">+962</option>
+  <option value="+961">+961</option>
+  <option value="+212">+212</option>
+  <option value="+213">+213</option>
+  <option value="+1">+1</option>
+  <option value="+44">+44</option>
+  <option value="+33">+33</option>
+  <option value="+49">+49</option>
+  <option value="+39">+39</option>
+  <option value="+34">+34</option>
+  <option value="+81">+81</option>
+  <option value="+86">+86</option>
+  <option value="+91">+91</option>
+</select>
+
+                        <input
+                          type="text"
+                          class="form-control"
+                          aria-label="Text input with dropdown button"
+                          placeholder="Please enter your second Number"
+                        />
+                      </div>
                 </div>
 
                 <div class="row">
                   <div class="mb-3 col-md-6">
                     <label class="form-label" for="nationalId">National Id:</label>
-                    <input type="text" class="form-control" id="nationalId" value="xxx xxxx xxx xxx" readonly />
+                    <input type="text" class="form-control" id="nationalId" value="xxx xxxx xxx xxx" readonly disabled />
                   </div>
                   <div class="mb-3 col-md-6">
                     <label class="form-label" for="country">Country:</label>
-                    <input type="text" class="form-control" id="country" value="Egypt" readonly />
+                    <input type="text" class="form-control" id="country" value="Egypt" readonly disabled />
                   </div>
                 </div>
 
                 <div class="row">
                   <div class="mb-3 col-md-6">
                     <label class="form-label" for="state">State:</label>
-                    <input type="text" class="form-control" id="state" value="Giza" readonly />
+                    <input type="text" class="form-control" id="state" value="Giza" readonly disabled />
                   </div>
                   <div class="mb-3 col-md-6">
                     <label class="form-label" for="city">City:</label>
-                    <input type="text" class="form-control" id="city" value="Shiekh Zayed" readonly />
+                    <input type="text" class="form-control" id="city" value="Shiekh Zayed" readonly disabled />
                   </div>
                 </div>
 

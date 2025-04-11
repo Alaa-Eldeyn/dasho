@@ -500,18 +500,6 @@
                 <option value="paypal">Paypal</option>
               </select>
             </div>
-            <div class="mb-3">
-              <label class="form-label" for="userInput" id="userInputLabel"
-                >UserName:</label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="userInput"
-                aria-describedby="UserNameHelp"
-                placeholder="Enter UserName"
-              />
-            </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-light" data-bs-dismiss="modal">
@@ -896,300 +884,62 @@
                       <h5>Transactions Logs:</h5>
                     </div>
                     <div class="card-body">
-                      <div class="d-flex gap-4 mb-3">
-                        <input
-                          type="text"
-                          placeholder="Search for All Transactions"
-                          class="form-control"
-                        />
-                        <select
-                          class="form-control"
-                          id="exampleFormControlSelect1"
-                        >
-                          <option>All Transactions</option>
-                          <option>All Withdraws</option>
-                          <option>All Commissions</option>
-                        </select>
-                        <select
-                          class="form-control"
-                          id="exampleForm2ControlSelect1"
-                        >
-                          <option>All Accounts</option>
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                        </select>
-                        <button type="button" class="btn btn-primary">
-                          Search
-                        </button>
-                      </div>
-                       <div class="dt-responsive table-responsive">
-                         <table
-                           id="demo-foo-filtering"
-                           class="table table-striped table-hover"
-                         >
-                           <thead class="border">
-                             <tr>
-                               <th>Date</th>
-                               <th>Transaction Type</th>
-                               <th>Account</th>
-                               <th>Amount</th>
-                               <th>Balance</th>
-                               <th>Status</th>
-                             </tr>
-                           </thead>
-                           <tbody class="border">
-                             <tr>
-                               <td>2011/04/25</td>
-                               <td>Commission</td>
-                               <td>2</td>
-                               <td>2000</td>
-                               <td>3000</td>
-                               <td class="text-success">Received</td>
-                             </tr>
-                             <tr>
-                               <td>2011/04/25</td>
-                               <td>Withdraw</td>
-                               <td>1</td>
-                               <td>2000</td>
-                               <td>3000</td>
-                               <td class="text-info">Pending</td>
-                             </tr>
-                             <tr>
-                               <td>2011/04/25</td>
-                               <td>Transfer</td>
-                               <td>3</td>
-                               <td>2000</td>
-                               <td>3000</td>
-                               <td class="text-danger">Rejected</td>
-                             </tr>
-                             <tr>
-                               <td>2011/04/25</td>
-                               <td>Commission</td>
-                               <td>2</td>
-                               <td>2000</td>
-                               <td>3000</td>
-                               <td class="text-success">Received</td>
-                             </tr>
-                             <tr>
-                               <td>2011/04/25</td>
-                               <td>Withdraw</td>
-                               <td>1</td>
-                               <td>2000</td>
-                               <td>3000</td>
-                               <td class="text-info">Pending</td>
-                             </tr>
-                             <tr>
-                               <td>2011/04/25</td>
-                               <td>Transfer</td>
-                               <td>3</td>
-                               <td>2000</td>
-                               <td>3000</td>
-                               <td class="text-danger">Rejected</td>
-                             </tr>
-                             <tr>
-                               <td>2011/04/25</td>
-                               <td>Commission</td>
-                               <td>2</td>
-                               <td>2000</td>
-                               <td>3000</td>
-                               <td class="text-success">Received</td>
-                             </tr>
-                             <tr>
-                               <td>2011/04/25</td>
-                               <td>Withdraw</td>
-                               <td>1</td>
-                               <td>2000</td>
-                               <td>3000</td>
-                               <td class="text-info">Pending</td>
-                             </tr>
-                             <tr>
-                               <td>2011/04/25</td>
-                               <td>Transfer</td>
-                               <td>3</td>
-                               <td>2000</td>
-                               <td>3000</td>
-                               <td class="text-danger">Rejected</td>
-                             </tr>
-                             <tr>
-                               <td>2011/04/25</td>
-                               <td>Commission</td>
-                               <td>2</td>
-                               <td>2000</td>
-                               <td>3000</td>
-                               <td class="text-success">Received</td>
-                             </tr>
-                             <tr>
-                               <td>2011/04/25</td>
-                               <td>Withdraw</td>
-                               <td>1</td>
-                               <td>2000</td>
-                               <td>3000</td>
-                               <td class="text-info">Pending</td>
-                             </tr>
-                             <tr>
-                               <td>2011/04/25</td>
-                               <td>Transfer</td>
-                               <td>3</td>
-                               <td>2000</td>
-                               <td>3000</td>
-                               <td class="text-danger">Rejected</td>
-                             </tr>
-                             <tr>
-                               <td>2011/04/25</td>
-                               <td>Commission</td>
-                               <td>2</td>
-                               <td>2000</td>
-                               <td>3000</td>
-                               <td class="text-success">Received</td>
-                             </tr>
-                             <tr>
-                               <td>2011/04/25</td>
-                               <td>Withdraw</td>
-                               <td>1</td>
-                               <td>2000</td>
-                               <td>3000</td>
-                               <td class="text-info">Pending</td>
-                             </tr>
-                             <tr>
-                               <td>2011/04/25</td>
-                               <td>Transfer</td>
-                               <td>3</td>
-                               <td>2000</td>
-                               <td>3000</td>
-                               <td class="text-danger">Rejected</td>
-                             </tr>
-                             <tr>
-                               <td>2011/04/25</td>
-                               <td>Commission</td>
-                               <td>2</td>
-                               <td>2000</td>
-                               <td>3000</td>
-                               <td class="text-success">Received</td>
-                             </tr>
-                             <tr>
-                               <td>2011/04/25</td>
-                               <td>Withdraw</td>
-                               <td>1</td>
-                               <td>2000</td>
-                               <td>3000</td>
-                               <td class="text-info">Pending</td>
-                             </tr>
-                             <tr>
-                               <td>2011/04/25</td>
-                               <td>Transfer</td>
-                               <td>3</td>
-                               <td>2000</td>
-                               <td>3000</td>
-                               <td class="text-danger">Rejected</td>
-                             </tr>
-                             <tr>
-                               <td>2011/04/25</td>
-                               <td>Commission</td>
-                               <td>2</td>
-                               <td>2000</td>
-                               <td>3000</td>
-                               <td class="text-success">Received</td>
-                             </tr>
-                             <tr>
-                               <td>2011/04/25</td>
-                               <td>Withdraw</td>
-                               <td>1</td>
-                               <td>2000</td>
-                               <td>3000</td>
-                               <td class="text-info">Pending</td>
-                             </tr>
-                             <tr>
-                               <td>2011/04/25</td>
-                               <td>Transfer</td>
-                               <td>3</td>
-                               <td>2000</td>
-                               <td>3000</td>
-                               <td class="text-danger">Rejected</td>
-                             </tr>
-                             <tr>
-                               <td>2011/04/25</td>
-                               <td>Commission</td>
-                               <td>2</td>
-                               <td>2000</td>
-                               <td>3000</td>
-                               <td class="text-success">Received</td>
-                             </tr>
-                             <tr>
-                               <td>2011/04/25</td>
-                               <td>Withdraw</td>
-                               <td>1</td>
-                               <td>2000</td>
-                               <td>3000</td>
-                               <td class="text-info">Pending</td>
-                             </tr>
-                             <tr>
-                               <td>2011/04/25</td>
-                               <td>Transfer</td>
-                               <td>3</td>
-                               <td>2000</td>
-                               <td>3000</td>
-                               <td class="text-danger">Rejected</td>
-                             </tr>
-                             <tr>
-                               <td>2011/04/25</td>
-                               <td>Commission</td>
-                               <td>2</td>
-                               <td>2000</td>
-                               <td>3000</td>
-                               <td class="text-success">Received</td>
-                             </tr>
-                             <tr>
-                               <td>2011/04/25</td>
-                               <td>Withdraw</td>
-                               <td>1</td>
-                               <td>2000</td>
-                               <td>3000</td>
-                               <td class="text-info">Pending</td>
-                             </tr>
-                             <tr>
-                               <td>2011/04/25</td>
-                               <td>Transfer</td>
-                               <td>3</td>
-                               <td>2000</td>
-                               <td>3000</td>
-                               <td class="text-danger">Rejected</td>
-                             </tr>
-                             <tr>
-                               <td>2011/04/25</td>
-                               <td>Commission</td>
-                               <td>2</td>
-                               <td>2000</td>
-                               <td>3000</td>
-                               <td class="text-success">Received</td>
-                             </tr>
-                             <tr>
-                               <td>2011/04/25</td>
-                               <td>Withdraw</td>
-                               <td>1</td>
-                               <td>2000</td>
-                               <td>3000</td>
-                               <td class="text-info">Pending</td>
-                             </tr>
-                           </tbody>
-   
-                           <tfoot class="text-center">
-                             <tr class="wallet-tfoot">
-                               <td rowspan="3" class="fw-bold">Totals:</td>
-                               <td class="fw-bold">Commissions</td>
-                               <td d colspan="4">5000 PV</td>
-                             </tr>
-                             <tr class="wallet-tfoot">
-                               <td class="fw-bold">Withdraws</td>
-                               <td colspan="4">5000 PV</td>
-                             </tr>
-                             <tr class="wallet-tfoot">
-                               <td class="fw-bold">Transfers</td>
-                               <td colspan="4">5000 PV</td>
-                             </tr>
-                           </tfoot>
-                         </table>
-                       </div>
+                     
+                      <table id="simpletable5" class="table table-striped table-bordered table-hover">
+<thead>
+        <tr>
+          <th>Date</th>
+          <th>Transaction Type</th>
+          <th>Account</th>
+          <th>Amount</th>
+          <th>Balance</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>5 feb. 2025</td>
+          <td>Commission</td>
+          <td>02</td>
+          <td>$3000</td>
+          <td>$6000</td>
+          <td><span class="text-success">Received</span></td>
+        </tr>
+        <tr>
+          <td>5 feb. 2025</td>
+          <td>Withdraw</td>
+          <td>01</td>
+          <td>$1500</td>
+          <td>$2000</td>
+          <td><span class="text-warning text-dark">Pending</span></td>
+        </tr>
+        <tr>
+          <td>5 feb. 2025</td>
+          <td>Transfer</td>
+          <td>03</td>
+          <td>$3000</td>
+          <td>$2000</td>
+          <td><span class="text-danger">Rejected</span></td>
+        </tr>
+
+        <!-- Totals -->
+<tfoot class="text-center fw-bold">
+          <tr class="fw-bold">
+          <td rowspan="3">Total</td>
+          <td >Commissions</td>
+          <td colspan="4">$6000</td>
+        </tr>
+        <tr class="fw-bold">
+          <td>Withdraws</td>
+          <td colspan="4">$5000</td>
+        </tr>
+        <tr class="fw-bold">
+          <td>Transfers</td>
+          <td colspan="4">$2000</td>
+        </tr>
+</tfoot>
+      </tbody>
+    </table>
                     </div>
                   </div>
                 </div>
@@ -1242,7 +992,7 @@
         });
       });
     </script>
-    <script>
+    <!-- <script>
       document.addEventListener("DOMContentLoaded", function () {
         const methodSelect = document.getElementById(
           "exampleFormControlSelect1"
@@ -1260,6 +1010,6 @@
           }
         });
       });
-    </script>
+    </script> -->
   </body>
 </html>
