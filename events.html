@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Messages</title>
+    <title>Events</title>
     <!-- Favicon icon -->
     <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon" />
     <!-- fontawesome icon -->
@@ -15,11 +15,6 @@
     <link
       rel="stylesheet"
       href="assets/plugins/animation/css/animate.min.css"
-    />
-    <!-- data tables css -->
-    <link
-      rel="stylesheet"
-      href="assets/plugins/data-tables/css/datatables.min.css"
     />
     <!-- vendor css -->
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -117,7 +112,7 @@
                 ><span class="pcoded-mtext">Top Earners</span></a
               >
             </li>
-<li data-username="Orders" class="nav-item">
+            <li data-username="Orders" class="nav-item">
               <a href="orders.html" class="nav-link"
                 ><span class="pcoded-micon"
                   ><i class="fas fa-dolly-flatbed"></i></span
@@ -178,7 +173,7 @@
       </a>
       <div class="collapse navbar-collapse">
         <h4 class="ms-3 my-auto">
-          <i class="fas fa-comments me-2"></i>Messages
+          <i class="feather icon-tv me-2"></i>Events
         </h4>
         <a href="#!" class="mob-toggler"></a>
         <ul class="navbar-nav ms-auto">
@@ -370,28 +365,187 @@
     </header>
     <!-- [ Header ] end -->
 
+        <!-- [ Booking Modal ] start -->
+<div
+  id="BookingModal"
+  class="modal fade"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="BookingModalTitle"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered rounded-3" role="document">
+    <div class="modal-content p-4 rounded-3">
+      <div class="modal-header border-0">
+        <h5 class="modal-title fw-bold" id="BookingModalTitle">Booking Turning Dreams into Reality Business</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <div class="mb-3 fs-5 gap-3 d-flex justify-content-start align-items-center">
+          <label class="fw-bold">Amount :</label>
+          <p class="fs-5" style="margin-bottom: 10px;">200</p>
+        </div>
+
+        <div class="mb-3">
+          <label class="fw-bold">Choose Wallet :</label>
+          <select class="form-control">
+            <option>Wallet 01</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label class="fw-bold">Choose Payment method :</label>
+          <select class="form-control">
+            <option>Digital Coins</option>
+            <option>Bank Account</option>
+            <option>Paypal</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label class="fw-bold">Coupon Code :</label>
+          <div class="d-flex">
+            <input type="text" class="form-control me-2" placeholder="Please enter Coupon Code" />
+            <button class="btn btn-secondary">Apply</button>
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer border-0 justify-content-center">
+        <button class="btn btn-dark w-100 py-2" style="font-weight: bold;">Book Event</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- [ Booking Modal ] end -->
+   <!-- [ Copy Modal ] start -->
+  <div id="copyModalCenter" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="copyModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="copyModalCenterTitle">Info.</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h4 class="text-center">
+            <i class="feather icon-check-circle text-success"></i>
+            <span>Link Copied Successfully</span>
+          </h4>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-light" data-bs-dismiss="modal">
+            Close
+          </button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+            Ok
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- [ Copy Modal ] end -->
+
     <!-- [ Main Content ] start -->
     <div class="pcoded-main-container">
       <div class="pcoded-wrapper">
         <div class="pcoded-content">
           <div class="pcoded-inner-content">
             <div class="main-body">
-              <div class="page-wrapper"></div>
+              <div class="page-wrapper">
+                 <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <!-- Event 1 -->
+    <div class="col">
+      <div class="card h-100">
+        <a href="eventDetails.html">
+          <img src="/assets/images/events.png" class="card-img-top border" alt="Events">
+        </a>
+        <div class="card-body">
+          <a href="eventDetails.html" class="text-decoration-none text-dark">
+            <h5 class="card-title">Turning Dreams into Reality</h5>
+          </a>
+          <p class="card-text text-muted">Turning Dreams into Reality Turning Dreams into Reality</p>
+          <p class="text-danger fw-bold">50 Tickets Left! Book your Seat</p>
+          <p class="card-text">
+            <strong>5 feb 2025 Thurs. 9.00 PM to 10.00 PM</strong>
+            <span class="ms-2">&#128197;</span>
+          </p>
+        </div>
+        <div class="card-footer text-center">
+          <p class="fs-5 mb-3"><strong class="fw-bold">200 $</strong></p>
+          <hr>
+          <div class="d-flex gap-3">
+            <button class="btn flex-grow-1 m-0 btn-dark" data-bs-toggle="modal" data-bs-target="#BookingModal">BOOK NOW</button>
+            <button class="btn flex-grow-1 m-0 btn-secondary"  data-bs-toggle="modal" data-bs-target="#copyModalCenter">Invitation Link</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Event 2 -->
+    <div class="col">
+      <div class="card h-100">
+        <a href="eventDetails.html">
+          <img src="/assets/images/events.png" class="card-img-top border" alt="Events">
+        </a>
+        <div class="card-body">
+          <a href="eventDetails.html" class="text-decoration-none text-dark">
+            <h5 class="card-title">Dreamscape Events: Where Fantasies Come to Life</h5>
+          </a>
+          <p class="card-text text-muted">Turning Dreams into Reality Turning Dreams into Reality</p>
+          <p class="card-text">
+            <strong>5 feb 2025 Thurs. 9.00 PM to 10.00 PM</strong>
+            <span class="ms-2">&#128197;</span>
+          </p>
+        </div>
+        <div class="card-footer text-center">
+          <p class="fs-5 mb-3"><strong class="fw-bold">300 $</strong></p>
+          <hr>
+          <div class="d-flex gap-3">
+            <button class="btn flex-grow-1 m-0 btn-dark" data-bs-toggle="modal" data-bs-target="#BookingModal">BOOK NOW</button>
+            <button class="btn flex-grow-1 m-0 btn-secondary"  data-bs-toggle="modal" data-bs-target="#copyModalCenter">Invitation Link</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Event 3 -->
+    <div class="col">
+      <div class="card h-100">
+        <a href="eventDetails.html">
+          <img src="/assets/images/events.png" class="card-img-top border" alt="Events">
+        </a>
+        <div class="card-body">
+        <a href="eventDetails.html" class="text-decoration-none text-dark">
+          <h5 class="card-title">Turning Dreams into Reality</h5>
+        </a>
+          <p class="card-text text-muted">Turning Dreams into Reality Turning Dreams into Reality</p>
+          <p class="text-danger fw-bold">50 Tickets Left! Book your Seat</p>
+          <p class="card-text">
+            <strong>5 feb 2025 Thurs. 9.00 PM to 10.00 PM</strong>
+            <span class="ms-2">&#128197;</span>
+          </p>
+        </div>
+        <div class="card-footer text-center">
+          <p class="fs-5 mb-3"><strong class="fw-bold">200 $</strong></p>
+          <hr>
+          <div class="d-flex gap-3">
+            <button class="btn flex-grow-1 m-0 btn-dark" data-bs-toggle="modal" data-bs-target="#BookingModal">BOOK NOW</button>
+            <button class="btn flex-grow-1 m-0 btn-secondary"  data-bs-toggle="modal" data-bs-target="#copyModalCenter">Invitation Link</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- [ Main Content ] end -->
-
-    <!-- [ Floating Whatsapp ] start -->
-    <div
-      class="position-fixed bottom-0 end-0 m-4 rounded-pill bg-success text-white d-flex justify-content-center align-center"
-      style="width: 50px; height: 50px; cursor: pointer"
-    >
-      <i class="fab fa-whatsapp fs-3 mt-2"></i>
-    </div>
-    <!-- [ Floating Whatsapp ] end -->
 
     <script src="assets/js/vendor-all.min.js"></script>
     <script src="assets/plugins/bootstrap/js/popper.min.js"></script>

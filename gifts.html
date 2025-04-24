@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Messages</title>
+    <title>Gifts</title>
     <!-- Favicon icon -->
     <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon" />
     <!-- fontawesome icon -->
@@ -16,22 +16,43 @@
       rel="stylesheet"
       href="assets/plugins/animation/css/animate.min.css"
     />
-    <!-- data tables css -->
-    <link
-      rel="stylesheet"
-      href="assets/plugins/data-tables/css/datatables.min.css"
-    />
     <!-- vendor css -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      .gift-card {
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer;
+      }
+
+      .gift-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(255, 193, 7, 0.6);
+      }
+
+      .gift-icon {
+        font-size: 50px;
+      }
+
+      .ribbon {
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        background: crimson;
+        color: white;
+        padding: 0.2rem 0.6rem;
+        font-size: 0.8rem;
+        border-radius: 1rem;
+      }
+    </style>
   </head>
   <body>
-	<!-- [ Pre-loader ] start -->
-	<div class="loader-bg">
-		<div class="loader-track">
-			<div class="loader-fill"></div>
-		</div>
-	</div>
-	<!-- [ Pre-loader ] End -->
+    <!-- [ Pre-loader ] start -->
+    <div class="loader-bg">
+      <div class="loader-track">
+        <div class="loader-fill"></div>
+      </div>
+    </div>
+    <!-- [ Pre-loader ] End -->
     <!-- [ navigation menu ] start -->
     <nav class="pcoded-navbar menupos-fixed">
       <div class="navbar-wrapper">
@@ -112,19 +133,18 @@
             </li>
             <li data-username="topEarners" class="nav-item">
               <a href="topEarners.html" class="nav-link"
-                ><span class="pcoded-micon"
-                  ><i class="fas fa-award"></i></span
+                ><span class="pcoded-micon"><i class="fas fa-award"></i></span
                 ><span class="pcoded-mtext">Top Earners</span></a
               >
             </li>
-<li data-username="Orders" class="nav-item">
+            <li data-username="Orders" class="nav-item">
               <a href="orders.html" class="nav-link"
                 ><span class="pcoded-micon"
                   ><i class="fas fa-dolly-flatbed"></i></span
                 ><span class="pcoded-mtext">Orders</span></a
               >
             </li>
-<li data-username="Events" class="nav-item">
+            <li data-username="Events" class="nav-item">
               <a href="events.html" class="nav-link"
                 ><span class="pcoded-micon"
                   ><i class="feather icon-tv"></i></span
@@ -177,9 +197,7 @@
         <i class="feather icon-more-horizontal"></i>
       </a>
       <div class="collapse navbar-collapse">
-        <h4 class="ms-3 my-auto">
-          <i class="fas fa-comments me-2"></i>Messages
-        </h4>
+        <h4 class="ms-3 my-auto"><i class="fas fa-gifts me-2"></i>Gifts</h4>
         <a href="#!" class="mob-toggler"></a>
         <ul class="navbar-nav ms-auto">
           <li>
@@ -376,22 +394,79 @@
         <div class="pcoded-content">
           <div class="pcoded-inner-content">
             <div class="main-body">
-              <div class="page-wrapper"></div>
+              <div class="page-wrapper">
+                <h2 class="mb-4 text-center">🎁 Gifts for Our Top Marketers</h2>
+
+                <div class="row g-4">
+                  <!-- Gift 1 -->
+                  <div class="col-md-4">
+                    <div
+                      class="card rounded-3 h-100 gift-card position-relative border-warning text-center p-3 bg-white"
+                    >
+                      <div class="card-body">
+                        <span class="ribbon">Gift</span>
+                        <div class="gift-icon">🎁</div>
+                        <h5 class="mt-3">Amazon Voucher</h5>
+                        <p class="text-muted small">
+                          Worth $50 for completing 10 successful referrals.
+                        </p>
+                      </div>
+                      <div class="card-footer">
+                        <button class="btn w-100 btn-outline-warning btn-sm">
+                          Claim Now
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Gift 2 -->
+                  <div class="col-md-4">
+                    <div
+                      class="card rounded-3 h-100 gift-card position-relative border-success text-center p-3 bg-white"
+                    >
+                      <div class="card-body">
+                        <span class="ribbon">Bonus</span>
+                        <div class="gift-icon">💸</div>
+                        <h5 class="mt-3">Cash Reward</h5>
+                        <p class="text-muted small">
+                          Earned after reaching $1000 in sales.
+                        </p>
+                      </div>
+                      <div class="card-footer">
+                        <button class="btn w-100 btn-outline-success btn-sm">
+                          Claim Now
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Gift 3 -->
+                  <div class="col-md-4">
+                    <div
+                      class="card rounded-3 h-100 gift-card position-relative border-primary text-center p-3 bg-white"
+                    >
+                      <div class="card-body">
+                        <span class="ribbon">Reward</span>
+                        <div class="gift-icon">🏆</div>
+                        <h5 class="mt-3">Top Marketer Trophy</h5>
+                        <p class="text-muted small">
+                          Awarded monthly to our #1 performer.
+                        </p>
+                      </div>
+                      <div class="card-footer">
+                        <button class="btn w-100 btn-outline-primary btn-sm">
+                          View Details
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- [ Main Content ] end -->
-
-    <!-- [ Floating Whatsapp ] start -->
-    <div
-      class="position-fixed bottom-0 end-0 m-4 rounded-pill bg-success text-white d-flex justify-content-center align-center"
-      style="width: 50px; height: 50px; cursor: pointer"
-    >
-      <i class="fab fa-whatsapp fs-3 mt-2"></i>
-    </div>
-    <!-- [ Floating Whatsapp ] end -->
 
     <script src="assets/js/vendor-all.min.js"></script>
     <script src="assets/plugins/bootstrap/js/popper.min.js"></script>
